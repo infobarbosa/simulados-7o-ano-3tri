@@ -1,0 +1,1811 @@
+{
+ "titulo": "Ciências — Capítulos 6 e 7",
+ "disciplina": "Ciências",
+ "fonte": "Rotas — Ciências 7º ano (Edebê), capítulos 6 e 7 (págs. 94–125)",
+ "materia": "ciencias-maquinas",
+ "questoes": [
+  {
+   "id": "mex-01",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "107 e 117",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "O que caracteriza um motor de combustão externa, como o da maria-fumaça?",
+   "correta": "O combustível queima fora do cilindro, numa fornalha, e o calor aquece a água que vira vapor",
+   "erradas": [
+    "O combustível queima dentro do cilindro, misturado com o ar",
+    "O motor não precisa de combustível, porque usa só a pressão do ar",
+    "A água é queimada na fornalha para produzir vapor"
+   ],
+   "explicacao": "Na combustão externa a queima acontece numa fornalha fora do cilindro. O calor passa para a água da caldeira, que vira vapor; é o vapor, e não o fogo, que empurra o pistão."
+  },
+  {
+   "id": "mex-02",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "lacuna",
+   "enunciado": "Na locomotiva a vapor, a água é aquecida e vira vapor dentro de um recipiente chamado ______.",
+   "resposta": "caldeira",
+   "aceitas": [
+    "a caldeira"
+   ],
+   "explicacao": "A caldeira é o recipiente onde a água é aquecida pelo calor da fornalha e se transforma em vapor sob pressão."
+  },
+  {
+   "id": "mex-03",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "108",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "Por que sai fumaça pela chaminé de uma maria-fumaça?",
+   "correta": "Porque a queima do carvão ou da lenha na fornalha produz fumaça e gases, que escapam pela chaminé",
+   "erradas": [
+    "Porque o vapor de água é preto quando sai da caldeira",
+    "Porque o pistão precisa jogar fora o ar que entra no cilindro",
+    "Porque a fumaça é o combustível que ainda não foi usado"
+   ],
+   "explicacao": "A fumaça vem da combustão do carvão ou da lenha na fornalha. Junto com ela sai também o vapor já usado, por isso a nuvem branca se mistura à fumaça escura."
+  },
+  {
+   "id": "mex-04",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "vf",
+   "enunciado": "Na máquina a vapor, a pressão do vapor empurra um pistão e esse movimento é transmitido às rodas da locomotiva.",
+   "resposta": true,
+   "explicacao": "O vapor sob pressão empurra o pistão dentro do cilindro; hastes ligadas ao pistão transformam esse vai e vem em movimento de rotação das rodas."
+  },
+  {
+   "id": "mex-05",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "107 e 116",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "Coloque em ordem o funcionamento de uma máquina a vapor.",
+   "correta": "Queima do combustível → água aquecida na caldeira → vapor sob pressão → pistão em movimento → rodas giram",
+   "erradas": [
+    "Água aquecida na caldeira → queima do combustível → rodas giram → vapor sob pressão",
+    "Vapor sob pressão → queima do combustível → água aquecida → pistão em movimento",
+    "Queima do combustível → rodas giram → pistão em movimento → vapor sob pressão"
+   ],
+   "explicacao": "Primeiro o combustível queima e libera calor; o calor transforma a água da caldeira em vapor; a pressão do vapor move o pistão; o movimento do pistão gira as rodas."
+  },
+  {
+   "id": "mex-06",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "113",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "Qual era o objetivo principal do motor a vapor de Thomas Newcomen, de 1712?",
+   "correta": "Bombear a água que inundava as minas",
+   "erradas": [
+    "Mover automóveis nas primeiras estradas",
+    "Gerar eletricidade para as cidades",
+    "Moer grãos nos moinhos de vento"
+   ],
+   "explicacao": "A máquina de Newcomen foi criada para tirar água das minas de carvão. Ela fez sucesso no século XVIII, mas desperdiçava muita energia."
+  },
+  {
+   "id": "mex-07",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "113",
+   "ajuda": "combustao-externa",
+   "tipo": "vf",
+   "enunciado": "James Watt aperfeiçoou a máquina a vapor, deixando-a mais eficiente e capaz de movimentar várias máquinas ao mesmo tempo.",
+   "resposta": true,
+   "explicacao": "A máquina de Watt gastava menos energia que a de Newcomen e podia acionar várias máquinas. Ela é considerada o ponto de partida da era industrial."
+  },
+  {
+   "id": "mex-08",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "112 e 116",
+   "ajuda": "combustao-externa",
+   "tipo": "lacuna",
+   "enunciado": "Numa máquina térmica, a sequência de transformações é: energia química do combustível → energia ______ → energia mecânica.",
+   "resposta": "térmica",
+   "aceitas": [
+    "termica",
+    "calor",
+    "energia térmica"
+   ],
+   "explicacao": "A queima libera a energia química do combustível na forma de energia térmica (calor); a máquina transforma parte desse calor em energia mecânica, ou seja, movimento."
+  },
+  {
+   "id": "min-01",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "114 e 117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Qual é a diferença entre o motor de combustão interna e o motor a vapor?",
+   "correta": "No motor de combustão interna o combustível queima dentro dos próprios cilindros",
+   "erradas": [
+    "No motor de combustão interna o combustível queima numa fornalha externa",
+    "O motor de combustão interna não transforma calor em movimento",
+    "No motor de combustão interna não existe pistão"
+   ],
+   "explicacao": "No motor a vapor a combustão é externa: o fogo fica fora, numa fornalha. No motor de Otto a mistura de ar e combustível queima dentro do cilindro."
+  },
+  {
+   "id": "min-02",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Qual é a ordem correta dos quatro tempos do ciclo de Otto?",
+   "correta": "Admissão, compressão, explosão e descarga",
+   "erradas": [
+    "Compressão, admissão, descarga e explosão",
+    "Explosão, admissão, compressão e descarga",
+    "Admissão, explosão, compressão e descarga"
+   ],
+   "explicacao": "A ordem é admissão, compressão, explosão e descarga — dá para lembrar pelas iniciais A-C-E-D."
+  },
+  {
+   "id": "min-03",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "O que acontece no primeiro tempo do motor de quatro tempos, a admissão?",
+   "correta": "O pistão desce e o cilindro recebe a mistura de ar e combustível",
+   "erradas": [
+    "O pistão sobe e comprime a mistura de ar e combustível",
+    "Uma centelha queima a mistura e empurra o pistão para baixo",
+    "A válvula de escape abre e os gases da queima saem"
+   ],
+   "explicacao": "Na admissão a válvula de admissão está aberta e o pistão desce, puxando para dentro do cilindro a mistura de ar e combustível."
+  },
+  {
+   "id": "min-04",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Em qual dos quatro tempos a válvula de admissão se fecha e o pistão sobe, apertando a mistura?",
+   "correta": "Compressão",
+   "erradas": [
+    "Admissão",
+    "Explosão",
+    "Descarga"
+   ],
+   "explicacao": "Na compressão as válvulas estão fechadas e o pistão sobe, comprimindo a mistura de ar e combustível — isso deixa a queima mais potente."
+  },
+  {
+   "id": "min-05",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "lacuna",
+   "enunciado": "No terceiro tempo do ciclo de Otto, a explosão, é uma ______ (faísca) que faz a ignição da mistura.",
+   "resposta": "centelha",
+   "aceitas": [
+    "faísca",
+    "faisca",
+    "centelha elétrica",
+    "vela"
+   ],
+   "explicacao": "A centelha, ou faísca, é produzida pela vela de ignição. A mistura queima, a temperatura sobe muito rápido e os gases se expandem, empurrando o pistão para baixo."
+  },
+  {
+   "id": "min-06",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "vf",
+   "enunciado": "É no tempo da explosão que o motor de combustão interna realiza trabalho, porque a expansão dos gases empurra o pistão com força.",
+   "resposta": true,
+   "explicacao": "A explosão é o tempo motor: os gases quentes se expandem e empurram o pistão para baixo. Os outros três tempos preparam ou limpam o cilindro."
+  },
+  {
+   "id": "min-07",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "O que acontece no último tempo, a descarga?",
+   "correta": "A válvula de escape abre e os gases da queima saem pelo tubo de descarga",
+   "erradas": [
+    "Entra ar puro no cilindro para esfriar o motor",
+    "O pistão desce puxando mais combustível",
+    "A centelha queima o combustível que sobrou"
+   ],
+   "explicacao": "Na descarga a válvula de escape abre e os gases queimados são expulsos. Depois a válvula de admissão abre novamente e o ciclo recomeça."
+  },
+  {
+   "id": "min-08",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "114",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Qual engenheiro alemão é o nome mais associado ao motor de combustão interna de quatro tempos?",
+   "correta": "Nikolaus Otto",
+   "erradas": [
+    "Thomas Newcomen",
+    "James Watt",
+    "Heron de Alexandria"
+   ],
+   "explicacao": "Nikolaus Otto (1832–1891) desenvolveu o motor de combustão interna; até hoje os motores a gasolina seguem os princípios do ciclo de Otto."
+  },
+  {
+   "id": "min-09",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "114",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Qual foi o principal motivo do sucesso do motor do ciclo de Otto?",
+   "correta": "Usar combustíveis líquidos em combustão interna, o que deixou os motores menores, mais eficientes e mais fáceis de ligar",
+   "erradas": [
+    "Usar carvão moído em combustão interna",
+    "Criar uma combustão externa melhor que a das máquinas a vapor",
+    "Transformar toda a energia da fonte quente em trabalho"
+   ],
+   "explicacao": "Otto trocou o carvão pelo benzeno, um combustível líquido derivado do petróleo, e queimou-o dentro do cilindro. O resultado foram motores compactos e mais eficientes."
+  },
+  {
+   "id": "min-10",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "114",
+   "ajuda": "combustao-interna",
+   "tipo": "vf",
+   "enunciado": "O motor de combustão interna não causa nenhum problema ambiental, porque a queima acontece fechada dentro do cilindro.",
+   "resposta": false,
+   "explicacao": "Os gases da queima saem pelo escapamento. O uso amplo de combustíveis fósseis nesses motores polui o ar e contribui para as mudanças climáticas."
+  },
+  {
+   "id": "min-11",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "115",
+   "ajuda": "combustao-interna",
+   "tipo": "vf",
+   "enunciado": "Nos veículos elétricos não existe combustão: eles usam baterias recarregáveis.",
+   "resposta": true,
+   "explicacao": "Os veículos elétricos funcionam com baterias e motores elétricos, sem queima de combustível. Serem ou não sustentáveis depende de como a eletricidade do país é gerada."
+  },
+  {
+   "id": "aci-01",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "mc",
+   "enunciado": "Como se forma a chuva ácida?",
+   "correta": "Gases poluentes, como óxidos de enxofre e de nitrogênio, reagem com o vapor de água da atmosfera e formam ácidos",
+   "erradas": [
+    "A água do mar evapora com sal e o sal deixa a chuva ácida",
+    "O calor do Sol transforma o oxigênio do ar em ácido",
+    "A fumaça preta das chaminés se dissolve na chuva e a deixa escura"
+   ],
+   "explicacao": "A queima de combustíveis fósseis libera dióxido de enxofre e óxidos de nitrogênio. Na atmosfera, esses gases reagem com o vapor de água e formam ácido sulfúrico e ácido nítrico, que caem com a chuva."
+  },
+  {
+   "id": "aci-02",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "lacuna",
+   "enunciado": "O gás poluente que vem principalmente da queima de carvão e de derivados do petróleo e que forma a chuva ácida é o dióxido de ______.",
+   "resposta": "enxofre",
+   "aceitas": [
+    "enxôfre",
+    "dióxido de enxofre"
+   ],
+   "explicacao": "O dióxido de enxofre (SO₂) sai da queima de combustíveis fósseis que contêm enxofre e, na atmosfera, forma ácido sulfúrico."
+  },
+  {
+   "id": "aci-03",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "mc",
+   "enunciado": "Qual destes NÃO é um efeito da chuva ácida?",
+   "correta": "Aumentar a camada de ozônio sobre a Antártida",
+   "erradas": [
+    "Corroer monumentos, estátuas e construções",
+    "Acidificar rios e lagos, prejudicando peixes e outros seres aquáticos",
+    "Danificar folhas e raízes, prejudicando plantações e florestas"
+   ],
+   "explicacao": "A chuva ácida corrói construções, acidifica solos e águas e prejudica a vegetação. Ela não tem relação com o aumento da camada de ozônio."
+  },
+  {
+   "id": "aci-04",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "vf",
+   "enunciado": "A chuva ácida só cai exatamente em cima da fábrica ou da cidade que emitiu os poluentes.",
+   "resposta": false,
+   "explicacao": "Os ventos carregam os poluentes por centenas de quilômetros. Por isso a chuva ácida pode cair longe de onde os gases foram emitidos, até em outra região ou país."
+  },
+  {
+   "id": "aci-05",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "mc",
+   "enunciado": "Qual medida ajuda a diminuir a chuva ácida?",
+   "correta": "Usar filtros nas chaminés das indústrias e combustíveis com menos enxofre",
+   "erradas": [
+    "Construir chaminés mais baixas para a fumaça ficar perto do chão",
+    "Jogar mais água nas plantações para lavar o ácido",
+    "Substituir o álcool pela gasolina nos carros"
+   ],
+   "explicacao": "Filtros nas chaminés, catalisadores nos veículos, combustíveis com menos enxofre e fontes renováveis de energia reduzem a emissão dos gases que formam a chuva ácida."
+  },
+  {
+   "id": "aci-06",
+   "topico": "Chuva ácida",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "chuva-acida",
+   "tipo": "vf",
+   "enunciado": "As máquinas térmicas que queimam combustíveis fósseis estão entre as principais responsáveis pelos gases que formam a chuva ácida.",
+   "resposta": true,
+   "explicacao": "Termoelétricas, indústrias e motores a combustão queimam carvão e derivados do petróleo, liberando os óxidos de enxofre e de nitrogênio que formam a chuva ácida."
+  },
+  {
+   "id": "inv-01",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "mc",
+   "enunciado": "O que é a inversão térmica?",
+   "correta": "Uma camada de ar frio fica presa perto do solo, sob uma camada de ar quente que funciona como uma tampa",
+   "erradas": [
+    "O ar quente desce até o solo e empurra o ar frio para cima",
+    "A temperatura do planeta inteiro se inverte entre o inverno e o verão",
+    "O vapor de água do solo sobe e forma nuvens de poluição"
+   ],
+   "explicacao": "Normalmente o ar perto do solo é mais quente e sobe. Na inversão térmica a ordem se inverte: o ar frio, mais denso, fica embaixo e não consegue subir, porque há ar quente acima dele."
+  },
+  {
+   "id": "inv-02",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "mc",
+   "enunciado": "Por que a inversão térmica piora a qualidade do ar nas grandes cidades?",
+   "correta": "Porque os poluentes não conseguem se dispersar e ficam concentrados perto do chão, onde as pessoas respiram",
+   "erradas": [
+    "Porque ela produz gases poluentes novos na atmosfera",
+    "Porque ela destrói a camada de ozônio sobre a cidade",
+    "Porque ela aumenta a chuva e a umidade do ar"
+   ],
+   "explicacao": "A camada de ar quente impede o ar frio de subir. Sem essa circulação, a fumaça dos veículos e das indústrias fica presa perto do solo e a poluição se concentra."
+  },
+  {
+   "id": "inv-03",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "vf",
+   "enunciado": "A inversão térmica cria a poluição do ar.",
+   "resposta": false,
+   "explicacao": "A inversão térmica não cria poluentes: ela impede que os poluentes já emitidos se espalhem. Por isso a poluição fica mais concentrada e mais perigosa."
+  },
+  {
+   "id": "inv-04",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "mc",
+   "enunciado": "Em que época do ano a inversão térmica é mais comum em cidades como São Paulo?",
+   "correta": "No inverno, sobretudo nas noites e manhãs frias e secas",
+   "erradas": [
+    "No verão, nos dias de chuva forte",
+    "Na primavera, quando há mais vento",
+    "No outono, sempre à tarde, com o sol a pino"
+   ],
+   "explicacao": "No inverno, em noites de céu limpo, o solo perde calor rapidamente e esfria o ar junto a ele. Durante o dia, o Sol aquece o solo outra vez e a inversão se desfaz."
+  },
+  {
+   "id": "inv-05",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "lacuna",
+   "enunciado": "Na inversão térmica, o ar frio fica embaixo porque é mais ______ que o ar quente.",
+   "resposta": "denso",
+   "aceitas": [
+    "pesado"
+   ],
+   "explicacao": "O ar frio é mais denso (mais \"pesado\") e tende a ficar embaixo. Com o ar quente por cima, não há a subida de ar que normalmente levaria os poluentes para longe do solo."
+  },
+  {
+   "id": "inv-06",
+   "topico": "Inversão térmica",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "inversao-termica",
+   "tipo": "vf",
+   "enunciado": "Durante a inversão térmica aumentam os casos de problemas respiratórios, como crises de asma e bronquite.",
+   "resposta": true,
+   "explicacao": "Com os poluentes concentrados no ar que as pessoas respiram, pioram as doenças respiratórias, principalmente em crianças, idosos e pessoas com asma."
+  },
+  {
+   "id": "est-01",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "efeito-estufa",
+   "tipo": "mc",
+   "enunciado": "O que é o efeito estufa?",
+   "correta": "Um processo natural em que gases da atmosfera retêm parte do calor da Terra e mantêm o planeta aquecido",
+   "erradas": [
+    "Um buraco na atmosfera por onde entra o calor do Sol",
+    "Uma poluição criada pelo ser humano, que não existia antes",
+    "O aumento da temperatura dos oceanos pelo derretimento das geleiras"
+   ],
+   "explicacao": "O efeito estufa é natural e essencial: os gases de efeito estufa retêm parte do calor que a superfície da Terra emite. Sem ele, o planeta seria frio demais para a vida como conhecemos."
+  },
+  {
+   "id": "est-02",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "115 e 120",
+   "ajuda": "efeito-estufa",
+   "tipo": "mc",
+   "enunciado": "Qual é o principal gás de efeito estufa liberado pela queima de combustíveis fósseis?",
+   "correta": "Gás carbônico (CO₂)",
+   "erradas": [
+    "Gás oxigênio (O₂)",
+    "Gás nitrogênio (N₂)",
+    "Gás hélio (He)"
+   ],
+   "explicacao": "A queima de combustíveis fósseis libera grandes quantidades de gás carbônico. Outros gases de efeito estufa são o metano e o óxido nitroso."
+  },
+  {
+   "id": "est-03",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "efeito-estufa",
+   "tipo": "vf",
+   "enunciado": "O efeito estufa é sempre prejudicial e deveria ser eliminado por completo.",
+   "resposta": false,
+   "explicacao": "Sem o efeito estufa a temperatura média da Terra seria muito abaixo de zero. O problema não é o efeito estufa, e sim a intensificação dele pela ação humana."
+  },
+  {
+   "id": "est-04",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "efeito-estufa",
+   "tipo": "mc",
+   "enunciado": "Qual atividade humana NÃO contribui para intensificar o efeito estufa?",
+   "correta": "Gerar eletricidade com painéis solares",
+   "erradas": [
+    "Queimar carvão em termoelétricas",
+    "Desmatar e queimar florestas",
+    "Usar carros movidos a gasolina e a diesel"
+   ],
+   "explicacao": "A energia solar não emite gases de efeito estufa durante a geração. Queima de fósseis, desmatamento e queimadas aumentam a quantidade desses gases na atmosfera."
+  },
+  {
+   "id": "est-05",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "efeito-estufa",
+   "tipo": "lacuna",
+   "enunciado": "Os gases de efeito estufa agem como o vidro de uma estufa: deixam a luz do Sol entrar e retêm parte do ______ que a Terra devolve.",
+   "resposta": "calor",
+   "aceitas": [
+    "calor (radiação)",
+    "radiação"
+   ],
+   "explicacao": "A radiação do Sol atravessa a atmosfera e aquece a superfície. Parte do calor devolvido pela Terra é retida pelos gases de efeito estufa, o que mantém o planeta aquecido."
+  },
+  {
+   "id": "est-06",
+   "topico": "Efeito estufa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "efeito-estufa",
+   "tipo": "vf",
+   "enunciado": "O metano, gás liberado por lixões e pela criação de gado, também é um gás de efeito estufa.",
+   "resposta": true,
+   "explicacao": "O metano é um gás de efeito estufa muito potente. Ele vem da decomposição de matéria orgânica em lixões, de aterros, da pecuária e da extração de combustíveis fósseis."
+  },
+  {
+   "id": "aqu-01",
+   "topico": "Aquecimento global",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "aquecimento-global",
+   "tipo": "mc",
+   "enunciado": "O que é o aquecimento global?",
+   "correta": "O aumento da temperatura média do planeta, causado principalmente pela intensificação do efeito estufa",
+   "erradas": [
+    "O aumento da temperatura só nas cidades grandes, por causa do asfalto",
+    "A chegada do verão em todo o planeta ao mesmo tempo",
+    "O aumento do buraco na camada de ozônio sobre a Antártida"
+   ],
+   "explicacao": "O aquecimento global é a elevação da temperatura média da Terra. A causa principal é o excesso de gases de efeito estufa lançados pelas atividades humanas."
+  },
+  {
+   "id": "aqu-02",
+   "topico": "Aquecimento global",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "aquecimento-global",
+   "tipo": "mc",
+   "enunciado": "Qual destas é uma consequência do aquecimento global?",
+   "correta": "O derretimento de geleiras e a elevação do nível do mar",
+   "erradas": [
+    "A diminuição do gás carbônico na atmosfera",
+    "O aumento da camada de ozônio",
+    "O resfriamento dos oceanos"
+   ],
+   "explicacao": "Com o planeta mais quente, geleiras e calotas polares derretem e o nível do mar sobe, ameaçando cidades costeiras. Também aumentam ondas de calor e eventos extremos."
+  },
+  {
+   "id": "aqu-03",
+   "topico": "Aquecimento global",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "aquecimento-global",
+   "tipo": "vf",
+   "enunciado": "Efeito estufa e aquecimento global são a mesma coisa.",
+   "resposta": false,
+   "explicacao": "O efeito estufa é o processo natural que retém calor na atmosfera. O aquecimento global é o aumento da temperatura média do planeta provocado pela intensificação desse processo."
+  },
+  {
+   "id": "aqu-04",
+   "topico": "Aquecimento global",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "aquecimento-global",
+   "tipo": "lacuna",
+   "enunciado": "Para reduzir o aquecimento global, é preciso diminuir o uso de combustíveis ______ e investir em fontes renováveis.",
+   "resposta": "fósseis",
+   "aceitas": [
+    "fosseis"
+   ],
+   "explicacao": "Petróleo, carvão e gás natural são os combustíveis fósseis. Substituí-los por fontes renováveis, como solar, eólica e hidrelétrica, reduz a emissão de gases de efeito estufa."
+  },
+  {
+   "id": "aqu-05",
+   "topico": "Aquecimento global",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "aquecimento-global",
+   "tipo": "vf",
+   "enunciado": "O desmatamento contribui para o aquecimento global, porque árvores retiram gás carbônico do ar e, ao serem derrubadas ou queimadas, deixam de fazer isso e ainda liberam carbono.",
+   "resposta": true,
+   "explicacao": "As florestas absorvem gás carbônico na fotossíntese. O desmatamento e as queimadas eliminam esse serviço e lançam na atmosfera o carbono que estava guardado na vegetação."
+  },
+  {
+   "id": "clm-01",
+   "topico": "Mudanças climáticas",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "mudancas-climaticas",
+   "tipo": "mc",
+   "enunciado": "O que são as mudanças climáticas?",
+   "correta": "Alterações de longo prazo nos padrões de temperatura, chuvas e ventos do planeta",
+   "erradas": [
+    "A mudança do tempo de um dia para o outro",
+    "A troca das estações do ano ao longo de doze meses",
+    "A diferença de clima entre as regiões do Brasil"
+   ],
+   "explicacao": "Clima é o padrão observado por muitos anos; tempo é o estado da atmosfera agora. Mudanças climáticas são alterações nesses padrões de longo prazo, não a variação do dia a dia."
+  },
+  {
+   "id": "clm-02",
+   "topico": "Mudanças climáticas",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "mudancas-climaticas",
+   "tipo": "mc",
+   "enunciado": "Qual destes efeitos está associado às mudanças climáticas?",
+   "correta": "Secas mais longas em algumas regiões e chuvas extremas com enchentes em outras",
+   "erradas": [
+    "Apenas o aumento igual da temperatura em todo o planeta",
+    "A diminuição do nível dos oceanos em todo o mundo",
+    "O fim das estações do ano"
+   ],
+   "explicacao": "As mudanças climáticas desorganizam o regime de chuvas: há secas mais severas em algumas áreas e chuvas intensas, enchentes e tempestades mais fortes em outras."
+  },
+  {
+   "id": "clm-03",
+   "topico": "Mudanças climáticas",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "mudancas-climaticas",
+   "tipo": "vf",
+   "enunciado": "As máquinas térmicas que funcionam com combustíveis fósseis estão entre as causas das mudanças climáticas.",
+   "resposta": true,
+   "explicacao": "Essas máquinas foram essenciais para a indústria e o transporte, mas a queima de combustíveis fósseis lança gases de efeito estufa que alteram o clima do planeta."
+  },
+  {
+   "id": "clm-04",
+   "topico": "Mudanças climáticas",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "mudancas-climaticas",
+   "tipo": "lacuna",
+   "enunciado": "A transição para energias ______, como a solar e a eólica, é uma das principais formas de enfrentar as mudanças climáticas.",
+   "resposta": "renováveis",
+   "aceitas": [
+    "renovaveis",
+    "limpas"
+   ],
+   "explicacao": "Energias renováveis — solar, eólica e hidrelétrica — reduzem a dependência dos combustíveis fósseis e, com isso, a emissão de gases de efeito estufa."
+  },
+  {
+   "id": "clm-05",
+   "topico": "Mudanças climáticas",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "mudancas-climaticas",
+   "tipo": "mc",
+   "enunciado": "Qual atitude do dia a dia ajuda a reduzir a emissão de gases de efeito estufa?",
+   "correta": "Usar transporte coletivo, bicicleta ou caminhar em vez de andar sempre de carro",
+   "erradas": [
+    "Deixar aparelhos eletrônicos ligados o dia inteiro",
+    "Queimar o lixo no quintal em vez de separá-lo",
+    "Trocar de celular todos os anos"
+   ],
+   "explicacao": "Menos carros a combustão significa menos queima de gasolina e diesel. Economizar energia, evitar desperdício e não queimar lixo também reduzem as emissões."
+  },
+  {
+   "id": "ozo-01",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "mc",
+   "enunciado": "Para que serve a camada de ozônio?",
+   "correta": "Para filtrar boa parte da radiação ultravioleta do Sol antes que ela chegue à superfície",
+   "erradas": [
+    "Para reter o calor da Terra e manter o planeta aquecido",
+    "Para produzir o oxigênio que respiramos",
+    "Para refletir os poluentes de volta para o espaço"
+   ],
+   "explicacao": "A camada de ozônio funciona como um filtro solar do planeta: absorve a maior parte da radiação ultravioleta, que faz mal aos seres vivos."
+  },
+  {
+   "id": "ozo-02",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "lacuna",
+   "enunciado": "A camada de ozônio fica na ______, a camada da atmosfera acima daquela em que vivemos.",
+   "resposta": "estratosfera",
+   "aceitas": [
+    "estratósfera"
+   ],
+   "explicacao": "O ozônio que nos protege está concentrado na estratosfera, entre cerca de 20 km e 40 km de altitude."
+  },
+  {
+   "id": "ozo-03",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "mc",
+   "enunciado": "Quais substâncias ficaram famosas por destruir a camada de ozônio?",
+   "correta": "Os CFCs (clorofluorcarbonos), usados em aerossóis, geladeiras e aparelhos de ar-condicionado",
+   "erradas": [
+    "Os óxidos de enxofre liberados pelas termoelétricas",
+    "O gás carbônico liberado pelos carros",
+    "O metano liberado pelos lixões"
+   ],
+   "explicacao": "Os CFCs liberam cloro na estratosfera, e o cloro destrói as moléculas de ozônio. Por isso foram proibidos ou substituídos em quase todo o mundo."
+  },
+  {
+   "id": "ozo-04",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "mc",
+   "enunciado": "Qual é uma consequência da destruição da camada de ozônio para os seres humanos?",
+   "correta": "Mais casos de câncer de pele, queimaduras e problemas de visão, como catarata",
+   "erradas": [
+    "Mais enchentes e tempestades nas cidades",
+    "A elevação do nível dos oceanos",
+    "O aumento das crises de asma no inverno"
+   ],
+   "explicacao": "Com menos ozônio, mais radiação ultravioleta chega ao solo. O excesso de UV provoca câncer de pele, catarata, queda de imunidade e prejudica plantas e o plâncton dos oceanos."
+  },
+  {
+   "id": "ozo-05",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "vf",
+   "enunciado": "O buraco na camada de ozônio é a causa do aquecimento global.",
+   "resposta": false,
+   "explicacao": "São problemas diferentes. O buraco na camada de ozônio deixa passar mais radiação ultravioleta; o aquecimento global vem do excesso de gases de efeito estufa que retêm calor."
+  },
+  {
+   "id": "ozo-06",
+   "topico": "Camada de ozônio",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "120",
+   "ajuda": "camada-ozonio",
+   "tipo": "vf",
+   "enunciado": "Depois de acordos internacionais que proibiram os CFCs, a camada de ozônio começou a se recuperar.",
+   "resposta": true,
+   "explicacao": "O Protocolo de Montreal, de 1987, reduziu drasticamente o uso de CFCs. Hoje a camada de ozônio mostra sinais claros de recuperação — um exemplo de que acordos ambientais funcionam."
+  },
+  {
+   "id": "c6-01",
+   "topico": "O que é máquina",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "99",
+   "ajuda": "o-que-e-maquina",
+   "tipo": "mc",
+   "enunciado": "Segundo o livro, o que é uma máquina?",
+   "correta": "Qualquer aparelho que modifica uma força",
+   "erradas": [
+    "Qualquer aparelho que funciona com eletricidade",
+    "Qualquer objeto que tenha botões e telas",
+    "Qualquer ferramenta feita de metal"
+   ],
+   "explicacao": "Máquina é qualquer aparelho que modifica uma força — pode mudar a intensidade, a direção ou o sentido dela. Não precisa ter motor nem eletricidade."
+  },
+  {
+   "id": "c6-02",
+   "topico": "O que é máquina",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "96",
+   "ajuda": "o-que-e-maquina",
+   "tipo": "vf",
+   "enunciado": "As máquinas existem na vida humana apenas desde a invenção da eletricidade.",
+   "resposta": false,
+   "explicacao": "Máquinas simples existem desde a Antiguidade. Há registros de que o Homo habilis já usava ferramentas rústicas há cerca de 1,6 milhão de anos."
+  },
+  {
+   "id": "c6-03",
+   "topico": "O que é máquina",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "100",
+   "ajuda": "o-que-e-maquina",
+   "tipo": "mc",
+   "enunciado": "Quais são exemplos de máquinas simples?",
+   "correta": "Roda, alavanca, polia, plano inclinado e engrenagem",
+   "erradas": [
+    "Geladeira, liquidificador e ventilador",
+    "Motor a vapor, motor de combustão e turbina",
+    "Computador, celular e tablet"
+   ],
+   "explicacao": "Máquinas simples são geralmente formadas por uma só peça: roda, alavanca, polias (roldanas), plano inclinado e engrenagens."
+  },
+  {
+   "id": "c6-04",
+   "topico": "Força e vetor",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "99",
+   "ajuda": "forca-vetor",
+   "tipo": "mc",
+   "enunciado": "Na Física, o que é força?",
+   "correta": "Um agente capaz de mudar o movimento de um corpo ou de deformá-lo",
+   "erradas": [
+    "O esforço muscular que sentimos ao levantar algo",
+    "A massa de um corpo medida em quilogramas",
+    "A velocidade que um corpo alcança"
+   ],
+   "explicacao": "No dia a dia \"força\" lembra esforço físico, mas na Física força é o agente capaz de mudar o movimento de um corpo ou deformá-lo."
+  },
+  {
+   "id": "c6-05",
+   "topico": "Força e vetor",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "99",
+   "ajuda": "forca-vetor",
+   "tipo": "mc",
+   "enunciado": "Quais são as três características de uma grandeza vetorial como a força?",
+   "correta": "Intensidade, direção e sentido",
+   "erradas": [
+    "Massa, volume e densidade",
+    "Tamanho, cor e forma",
+    "Intensidade, massa e velocidade"
+   ],
+   "explicacao": "A força é uma grandeza vetorial: tem intensidade (número e unidade), direção e sentido. As máquinas podem mudar um ou mais desses três itens."
+  },
+  {
+   "id": "c6-06",
+   "topico": "Força e vetor",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "99",
+   "ajuda": "forca-vetor",
+   "tipo": "lacuna",
+   "enunciado": "O segmento de reta orientado (a seta) que representa uma grandeza vetorial se chama ______.",
+   "resposta": "vetor",
+   "aceitas": [
+    "um vetor"
+   ],
+   "explicacao": "O vetor é a seta que mostra intensidade (pelo tamanho), direção (pela linha) e sentido (pelo lado para onde a ponta aponta)."
+  },
+  {
+   "id": "c6-07",
+   "topico": "Força e vetor",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "99",
+   "ajuda": "forca-vetor",
+   "tipo": "vf",
+   "enunciado": "A massa é descrita apenas por um número e uma unidade, como 10 kg.",
+   "resposta": true,
+   "explicacao": "A massa não precisa de direção nem de sentido: basta o número e a unidade. Já a força precisa das três características, por isso é vetorial."
+  },
+  {
+   "id": "c6-08",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "100",
+   "ajuda": "alavancas",
+   "tipo": "mc",
+   "enunciado": "Quais são os três elementos de uma alavanca?",
+   "correta": "Força potente, força resistente e ponto de apoio",
+   "erradas": [
+    "Força potente, polia e eixo",
+    "Ponto de apoio, engrenagem e corrente",
+    "Intensidade, direção e sentido"
+   ],
+   "explicacao": "A força potente é a que aplicamos; a força resistente é a que queremos vencer; o ponto de apoio (ou fulcro) é onde a alavanca gira."
+  },
+  {
+   "id": "c6-09",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "101",
+   "ajuda": "alavancas",
+   "tipo": "mc",
+   "enunciado": "Numa alavanca interfixa, o que fica no meio?",
+   "correta": "O ponto de apoio",
+   "erradas": [
+    "A força potente",
+    "A força resistente",
+    "A carga que queremos levantar"
+   ],
+   "explicacao": "\"Inter-\" quer dizer no meio. Na interfixa o ponto fixo (apoio) fica no meio — como na gangorra, na tesoura e no alicate."
+  },
+  {
+   "id": "c6-10",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "101",
+   "ajuda": "alavancas",
+   "tipo": "mc",
+   "enunciado": "O carrinho de mão é exemplo de qual tipo de alavanca?",
+   "correta": "Inter-resistente",
+   "erradas": [
+    "Interfixa",
+    "Interpotente",
+    "Não é uma alavanca"
+   ],
+   "explicacao": "No carrinho de mão a carga (força resistente) fica entre a roda (apoio) e as mãos (força potente): é uma alavanca inter-resistente, como o quebra-nozes e o abridor de garrafas."
+  },
+  {
+   "id": "c6-11",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "101",
+   "ajuda": "alavancas",
+   "tipo": "mc",
+   "enunciado": "Pinça, cortador de unha e hashis são exemplos de alavanca de qual tipo?",
+   "correta": "Interpotente",
+   "erradas": [
+    "Interfixa",
+    "Inter-resistente",
+    "Plano inclinado"
+   ],
+   "explicacao": "Nesses objetos a força que aplicamos (potente) fica no meio, entre o apoio e a resistência: são alavancas interpotentes."
+  },
+  {
+   "id": "c6-12",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "100",
+   "ajuda": "alavancas",
+   "tipo": "vf",
+   "enunciado": "Quanto maior a distância entre o ponto onde aplicamos a força potente e o ponto de apoio, menor é a força necessária.",
+   "resposta": true,
+   "explicacao": "É por isso que um pé de cabra comprido facilita tanto o trabalho: afastar a mão do ponto de apoio multiplica o efeito da força aplicada."
+  },
+  {
+   "id": "c6-13",
+   "topico": "Alavancas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "101",
+   "ajuda": "alavancas",
+   "tipo": "lacuna",
+   "enunciado": "Nas alavancas do corpo humano, os ossos são as barras rígidas, os músculos fazem a força potente e as ______ funcionam como pontos de apoio.",
+   "resposta": "articulações",
+   "aceitas": [
+    "articulacoes",
+    "juntas"
+   ],
+   "explicacao": "O antebraço é o exemplo clássico: o cotovelo é o ponto de apoio, o músculo faz a força potente e o peso na mão é a força resistente."
+  },
+  {
+   "id": "c6-14",
+   "topico": "Roda",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "100",
+   "ajuda": "roda-polias",
+   "tipo": "mc",
+   "enunciado": "Qual é a função principal da roda como máquina simples?",
+   "correta": "Diminuir o atrito, transformando o movimento de arrastar em rolar",
+   "erradas": [
+    "Aumentar o peso da carga para ela não cair",
+    "Transformar calor em movimento",
+    "Mudar o sentido da força aplicada"
+   ],
+   "explicacao": "A roda é um disco que gira em torno de um eixo. Ao trocar o arrastar pelo rolar, ela reduz o atrito e exige menos força para mover cargas."
+  },
+  {
+   "id": "c6-15",
+   "topico": "Roda",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "96",
+   "ajuda": "roda-polias",
+   "tipo": "vf",
+   "enunciado": "A roda mudou de material ao longo do tempo, da pedra ao pneu radial de aço, mas o princípio de funcionamento continua o mesmo.",
+   "resposta": true,
+   "explicacao": "Os sumérios já usavam a roda há mais de 5 500 anos. Os materiais e as técnicas ficaram sofisticados, mas o princípio é o mesmo."
+  },
+  {
+   "id": "c6-16",
+   "topico": "Polias",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "102",
+   "ajuda": "roda-polias",
+   "tipo": "mc",
+   "enunciado": "O que a polia fixa modifica na força?",
+   "correta": "A direção e o sentido, sem diminuir o esforço",
+   "erradas": [
+    "A intensidade, reduzindo o esforço pela metade",
+    "O peso da carga, deixando-a mais leve",
+    "Nada: ela só enfeita o sistema"
+   ],
+   "explicacao": "A polia fixa tem o eixo preso a uma estrutura. Ela não reduz a força, mas permite puxar a corda para baixo em vez de levantar o peso, o que é mais confortável."
+  },
+  {
+   "id": "c6-17",
+   "topico": "Polias",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "102",
+   "ajuda": "roda-polias",
+   "tipo": "mc",
+   "enunciado": "E a polia móvel, o que ela faz?",
+   "correta": "Reduz a intensidade da força: cada polia móvel diminui o esforço pela metade",
+   "erradas": [
+    "Só muda a direção da força",
+    "Aumenta a força necessária, mas deixa o movimento mais rápido",
+    "Não modifica a força, apenas sustenta a carga"
+   ],
+   "explicacao": "A polia móvel se move junto com a carga e é sustentada pela própria corda. Cada polia móvel do sistema reduz a força necessária pela metade."
+  },
+  {
+   "id": "c6-18",
+   "topico": "Polias",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "97",
+   "ajuda": "roda-polias",
+   "tipo": "vf",
+   "enunciado": "Arquimedes mostrou que, com um sistema de várias roldanas, era possível mover um navio com pouquíssimo esforço.",
+   "resposta": true,
+   "explicacao": "Desafiado a mover um navio de duas toneladas, Arquimedes usou um conjunto de roldanas: juntas, elas multiplicam ainda mais a força aplicada."
+  },
+  {
+   "id": "c6-19",
+   "topico": "Engrenagens",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "103",
+   "ajuda": "engrenagens",
+   "tipo": "mc",
+   "enunciado": "Qual é a relação entre o número de dentes de uma engrenagem e a velocidade dela?",
+   "correta": "Quanto mais dentes, menos voltas ela dá, ou seja, menor a velocidade",
+   "erradas": [
+    "Quanto mais dentes, mais voltas ela dá e maior a velocidade",
+    "O número de dentes não tem relação com a velocidade",
+    "Quanto mais dentes, maior a velocidade e maior a força"
+   ],
+   "explicacao": "Engrenagens maiores, com mais dentes, giram menos vezes: perdem velocidade e ganham força. As menores giram mais e dão mais velocidade."
+  },
+  {
+   "id": "c6-20",
+   "topico": "Engrenagens",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "103",
+   "ajuda": "engrenagens",
+   "tipo": "lacuna",
+   "enunciado": "Na bicicleta, a engrenagem maior, ligada ao pedal, é a ______.",
+   "resposta": "coroa",
+   "aceitas": [
+    "a coroa"
+   ],
+   "explicacao": "A coroa é a engrenagem grande do pedal; a catraca (ou pinhão) é a pequena, ligada à roda. Uma corrente liga as duas."
+  },
+  {
+   "id": "c6-21",
+   "topico": "Engrenagens",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "103",
+   "ajuda": "engrenagens",
+   "tipo": "mc",
+   "enunciado": "Numa bicicleta com marchas, o que acontece ao usar um pinhão maior?",
+   "correta": "A pedalada fica mais lenta e mais leve, boa para subidas íngremes",
+   "erradas": [
+    "A bicicleta anda mais rápido, boa para descidas",
+    "A corrente sai da coroa e para de funcionar",
+    "A força aplicada no pedal aumenta junto com a velocidade"
+   ],
+   "explicacao": "Pinhões maiores deixam a pedalada mais leve e lenta — ideal para subir. Pinhões menores fazem a bicicleta andar mais rápido."
+  },
+  {
+   "id": "c6-22",
+   "topico": "Plano inclinado",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "104",
+   "ajuda": "plano-inclinado",
+   "tipo": "mc",
+   "enunciado": "O que é um plano inclinado?",
+   "correta": "Qualquer superfície rígida, plana e inclinada em relação ao plano horizontal, como uma rampa",
+   "erradas": [
+    "Qualquer superfície curva, como uma estrada sinuosa",
+    "Um disco que gira em torno de um eixo",
+    "Uma barra rígida apoiada num ponto fixo"
+   ],
+   "explicacao": "A rampa é o exemplo mais comum de plano inclinado. Como máquina simples, ele reduz a força necessária para realizar uma tarefa."
+  },
+  {
+   "id": "c6-23",
+   "topico": "Plano inclinado",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "104",
+   "ajuda": "plano-inclinado",
+   "tipo": "mc",
+   "enunciado": "O que acontece quando o ângulo de inclinação de uma rampa diminui?",
+   "correta": "A força necessária diminui, mas o caminho a percorrer aumenta",
+   "erradas": [
+    "A força necessária aumenta e o caminho diminui",
+    "A força e o caminho diminuem juntos",
+    "Nada muda: só o tempo de subida"
+   ],
+   "explicacao": "É a troca do plano inclinado: quanto menor o ângulo, menos força, porém maior o deslocamento. Por isso estradas de montanha são cheias de curvas."
+  },
+  {
+   "id": "c6-24",
+   "topico": "Plano inclinado",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "104",
+   "ajuda": "plano-inclinado",
+   "tipo": "vf",
+   "enunciado": "Para a rampa garantir acessibilidade de verdade, basta que ela exista: a inclinação, o corrimão e o piso não importam.",
+   "resposta": false,
+   "explicacao": "Ter rampa não basta. Ela precisa seguir normas de segurança: inclinação adequada, corrimãos e piso antiderrapante, para o uso ser seguro e autônomo."
+  },
+  {
+   "id": "c6-25",
+   "topico": "Plano inclinado",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "105",
+   "ajuda": "plano-inclinado",
+   "tipo": "mc",
+   "enunciado": "Para que servem as rampas de escape nas rodovias?",
+   "correta": "Para frear veículos que perderam os freios, com superfície que aumenta a resistência ao movimento",
+   "erradas": [
+    "Para os veículos ganharem velocidade nas subidas",
+    "Para o ônibus embarcar pessoas com mobilidade reduzida",
+    "Para desviar a água da chuva da pista"
+   ],
+   "explicacao": "As rampas de escape ficam em descidas fortes e curvas perigosas. O material da superfície aumenta a resistência e a leve subida ajuda o veículo a parar."
+  },
+  {
+   "id": "c6-26",
+   "topico": "Máquinas térmicas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "106",
+   "ajuda": "maquinas-termicas",
+   "tipo": "mc",
+   "enunciado": "O que é uma máquina térmica?",
+   "correta": "Um aparelho que transforma energia térmica em energia mecânica",
+   "erradas": [
+    "Um aparelho formado por uma só peça, como a alavanca",
+    "Um aparelho que transforma movimento em calor",
+    "Um aparelho que só muda a direção de uma força"
+   ],
+   "explicacao": "Máquinas térmicas transformam energia térmica em energia mecânica para realizar uma tarefa: máquina a vapor, turbina a vapor e motor a combustão são exemplos."
+  },
+  {
+   "id": "c6-27",
+   "topico": "Máquinas térmicas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "106",
+   "ajuda": "maquinas-termicas",
+   "tipo": "mc",
+   "enunciado": "Como funciona a eolípila, a esfera a vapor de Heron de Alexandria?",
+   "correta": "A esfera com água é aquecida, a água vira vapor e o vapor, ao sair pelos tubos, faz a esfera girar",
+   "erradas": [
+    "O vento entra pelos tubos e faz a esfera girar",
+    "A esfera é empurrada por um pistão ligado a uma caldeira",
+    "A água fria entra na esfera e a pressão a faz girar"
+   ],
+   "explicacao": "Na eolípila, do século I, a energia térmica da fonte de calor vira energia mecânica: a rotação da esfera. É a primeira máquina térmica registrada."
+  },
+  {
+   "id": "c6-28",
+   "topico": "Máquinas térmicas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "106",
+   "ajuda": "maquinas-termicas",
+   "tipo": "lacuna",
+   "enunciado": "A energia ligada à agitação das partículas que formam a matéria é a energia ______.",
+   "resposta": "térmica",
+   "aceitas": [
+    "termica"
+   ],
+   "explicacao": "Quanto mais agitadas as partículas, maior a energia térmica. É essa energia que as máquinas térmicas transformam em movimento."
+  },
+  {
+   "id": "c6-29",
+   "topico": "Máquinas térmicas",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "108",
+   "ajuda": "alavancas",
+   "tipo": "mc",
+   "enunciado": "O monjolo é uma barra que gira em torno de um eixo central, com um pilão numa ponta e um recipiente de água na outra. Que máquina simples ele é?",
+   "correta": "Uma alavanca interfixa, porque o eixo (ponto de apoio) fica entre as duas pontas",
+   "erradas": [
+    "Uma alavanca interpotente, porque a força fica no meio",
+    "Um plano inclinado, porque a água desce",
+    "Uma polia móvel, porque sobe e desce"
+   ],
+   "explicacao": "No monjolo o ponto de apoio é o eixo central, entre o peso da água (força potente) e o pilão (força resistente): é uma alavanca interfixa, como a gangorra."
+  },
+  {
+   "id": "c6-30",
+   "topico": "Arquimedes",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "97",
+   "ajuda": "o-que-e-maquina",
+   "tipo": "mc",
+   "enunciado": "Qual alternativa descreve corretamente uma contribuição de Arquimedes?",
+   "correta": "Aperfeiçoou a alavanca, mostrando que uma força pequena pode mover objetos muito grandes",
+   "erradas": [
+    "Inventou o motor a combustão para mover navios",
+    "Criou a roda",
+    "Foi o primeiro a fazer ferramentas de pedra para caçar"
+   ],
+   "explicacao": "Arquimedes, estudioso grego do século III a.C., explicou o princípio da alavanca e aperfeiçoou o parafuso e as roldanas."
+  },
+  {
+   "id": "c6-31",
+   "topico": "Arquimedes",
+   "capitulo": 6,
+   "foco": false,
+   "pagina": "97",
+   "ajuda": "o-que-e-maquina",
+   "tipo": "vf",
+   "enunciado": "O parafuso de Arquimedes, criado para tirar água do rio Nilo e irrigar plantações, não é mais usado hoje.",
+   "resposta": false,
+   "explicacao": "Ele continua em uso, por exemplo em bombas de água e no transporte de grãos."
+  },
+  {
+   "id": "c7-01",
+   "topico": "Máquinas térmicas e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "112",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "Qual é a principal característica de uma máquina térmica?",
+   "correta": "Transformar energia térmica em trabalho",
+   "erradas": [
+    "Transformar trabalho em energia térmica",
+    "Produzir energia a partir do nada",
+    "Modificar apenas a direção de uma força"
+   ],
+   "explicacao": "A máquina térmica transforma energia térmica em trabalho. O caminho contrário — trabalho virando calor — acontece sozinho na natureza, como no atrito."
+  },
+  {
+   "id": "c7-02",
+   "topico": "Máquinas térmicas e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "112",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "Na Física, o que é trabalho?",
+   "correta": "O processo em que a energia é transferida ou transformada de uma forma em outra, geralmente com movimento",
+   "erradas": [
+    "O esforço que a pessoa faz no emprego",
+    "A quantidade de calor que um corpo tem guardada",
+    "A força multiplicada pela massa do corpo"
+   ],
+   "explicacao": "Trabalho é a transferência ou transformação de energia de uma forma em outra, em geral acompanhada de movimento ou de mudança de estado físico."
+  },
+  {
+   "id": "c7-03",
+   "topico": "Máquinas térmicas e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "113",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "O que é um motor?",
+   "correta": "Uma máquina que transforma qualquer tipo de energia em energia mecânica",
+   "erradas": [
+    "Uma máquina que só funciona com gasolina",
+    "Uma máquina simples formada por uma peça",
+    "Um aparelho que guarda energia para usar depois"
+   ],
+   "explicacao": "Motor é a máquina que transforma qualquer energia em energia mecânica, a energia do movimento. Por isso as máquinas térmicas também são motores."
+  },
+  {
+   "id": "c7-04",
+   "topico": "Máquinas térmicas e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "112",
+   "ajuda": "termodinamica",
+   "tipo": "vf",
+   "enunciado": "O atrito e a resistência do ar transformam movimento em calor sozinhos, sem que ninguém precise fazer nada.",
+   "resposta": true,
+   "explicacao": "Esse caminho é espontâneo: um objeto perde movimento e dissipa energia como calor. O difícil foi aprender a fazer o contrário — calor virar movimento útil."
+  },
+  {
+   "id": "c7-05",
+   "topico": "Leis da Termodinâmica",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "116",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "O que diz a 1ª lei da Termodinâmica?",
+   "correta": "A energia não é criada nem destruída, apenas transformada",
+   "erradas": [
+    "O calor passa do corpo mais frio para o mais quente",
+    "Toda a energia térmica pode virar trabalho útil",
+    "A energia de uma máquina aumenta a cada ciclo"
+   ],
+   "explicacao": "É a lei da conservação da energia. Numa máquina térmica, parte da energia da fonte quente vira trabalho e parte sempre se perde para o ambiente."
+  },
+  {
+   "id": "c7-06",
+   "topico": "Leis da Termodinâmica",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "116",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "Segundo a 2ª lei da Termodinâmica, como o calor flui espontaneamente?",
+   "correta": "Do corpo mais quente para o mais frio, até o equilíbrio térmico",
+   "erradas": [
+    "Do corpo mais frio para o mais quente",
+    "Sempre de baixo para cima",
+    "Somente dentro de máquinas térmicas"
+   ],
+   "explicacao": "Por isso é impossível construir uma máquina que transforme toda a energia térmica em trabalho útil: parte do calor sempre escapa para a fonte fria."
+  },
+  {
+   "id": "c7-07",
+   "topico": "Leis da Termodinâmica",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "116",
+   "ajuda": "termodinamica",
+   "tipo": "lacuna",
+   "enunciado": "Numa máquina térmica, o ambiente, que recebe a energia perdida, funciona como fonte ______.",
+   "resposta": "fria",
+   "aceitas": [
+    "fria (ambiente)"
+   ],
+   "explicacao": "A fonte quente fornece o calor; a fonte fria recebe a parte da energia que não virou trabalho. Essa perda limita a eficiência das máquinas térmicas."
+  },
+  {
+   "id": "c7-08",
+   "topico": "Leis da Termodinâmica",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "125",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "Por que o moto-contínuo, a máquina que funcionaria para sempre sozinha, é impossível?",
+   "correta": "Porque violaria as leis da Termodinâmica: nenhuma máquina cria energia nem aproveita 100% do calor",
+   "erradas": [
+    "Porque ninguém conseguiu construir peças resistentes o bastante",
+    "Porque falta um combustível suficientemente potente",
+    "Porque o atrito poderia ser eliminado, mas custaria muito caro"
+   ],
+   "explicacao": "A 1ª lei impede produzir mais energia do que se consome; a 2ª impede transformar todo o calor em trabalho, porque parte sempre se perde."
+  },
+  {
+   "id": "c7-09",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "mc",
+   "enunciado": "Quais são exemplos de combustíveis fósseis?",
+   "correta": "Petróleo, gás natural e carvão",
+   "erradas": [
+    "Etanol, biodiesel e biomassa",
+    "Hidrogênio, energia solar e eólica",
+    "Lenha, bagaço de cana e esterco"
+   ],
+   "explicacao": "Os fósseis vêm da decomposição de matéria orgânica ao longo de milhões de anos. Têm alta densidade energética, mas são finitos e emitem muito gás carbônico."
+  },
+  {
+   "id": "c7-10",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "mc",
+   "enunciado": "Como é produzido o etanol?",
+   "correta": "Pela fermentação de açúcares da cana-de-açúcar ou do milho",
+   "erradas": [
+    "Pela destilação do petróleo",
+    "Pela queima do carvão em altas temperaturas",
+    "Pela eletrólise da água do mar"
+   ],
+   "explicacao": "O etanol é um biocombustível feito da fermentação de açúcares. É muito usado no Brasil e nos Estados Unidos, como aditivo ou substituto da gasolina."
+  },
+  {
+   "id": "c7-11",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "lacuna",
+   "enunciado": "Os biocombustíveis, como o etanol e o biodiesel, são produzidos a partir da ______, que é material orgânico de plantas e resíduos animais.",
+   "resposta": "biomassa",
+   "aceitas": [
+    "a biomassa"
+   ],
+   "explicacao": "Biomassa é todo material orgânico usado como fonte de energia. Em teoria, a produção e o uso de biocombustíveis têm emissão neutra de carbono."
+  },
+  {
+   "id": "c7-12",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "mc",
+   "enunciado": "Por que o hidrogênio é chamado de \"combustível do futuro\"?",
+   "correta": "Porque nas células de combustível ele gera eletricidade liberando água como subproduto",
+   "erradas": [
+    "Porque é o combustível mais barato que existe hoje",
+    "Porque é retirado facilmente do petróleo",
+    "Porque não precisa de nenhuma tecnologia para ser usado"
+   ],
+   "explicacao": "O hidrogênio tem grande potencial, principalmente em veículos elétricos, mas ainda enfrenta desafios de produção e de infraestrutura."
+  },
+  {
+   "id": "c7-13",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "vf",
+   "enunciado": "Um carro elétrico é sempre sustentável, não importa de onde venha a eletricidade.",
+   "resposta": false,
+   "explicacao": "O carro elétrico não queima combustível, mas a eletricidade pode vir de termoelétricas que queimam fósseis. Depende da matriz energética de cada país."
+  },
+  {
+   "id": "c7-14",
+   "topico": "Rendimento dos motores",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "118",
+   "ajuda": "rendimento",
+   "tipo": "mc",
+   "enunciado": "O que o rendimento de um motor mede?",
+   "correta": "Com que eficiência ele transforma a energia do combustível em trabalho útil",
+   "erradas": [
+    "Quantos quilômetros ele já rodou na vida",
+    "Quanto combustível cabe no tanque",
+    "Qual é a velocidade máxima do veículo"
+   ],
+   "explicacao": "Um motor mais eficiente gasta menos combustível para o mesmo trabalho, custa menos para funcionar e emite menos poluentes."
+  },
+  {
+   "id": "c7-15",
+   "topico": "Rendimento dos motores",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "118",
+   "ajuda": "rendimento",
+   "tipo": "vf",
+   "enunciado": "Um motor de baixo rendimento gasta mais combustível e polui mais para realizar o mesmo trabalho.",
+   "resposta": true,
+   "explicacao": "Baixo rendimento significa mais combustível queimado, mais gasto de dinheiro e mais emissão de poluentes."
+  },
+  {
+   "id": "c7-16",
+   "topico": "Impactos socioambientais",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "120",
+   "ajuda": "impactos-sociais",
+   "tipo": "mc",
+   "enunciado": "O que mudou no trabalho com a Revolução Industrial impulsionada pelas máquinas térmicas?",
+   "correta": "O trabalho artesanal foi substituído pela produção em massa, com tarefas divididas em partes pequenas e repetitivas",
+   "erradas": [
+    "Os trabalhadores passaram a produzir peças inteiras sozinhos",
+    "O trabalho nas cidades acabou e todos voltaram ao campo",
+    "As jornadas de trabalho diminuíram imediatamente"
+   ],
+   "explicacao": "Com a produção em massa, cada trabalhador passava o dia fazendo a mesma tarefa, e os patrões ganharam mais controle sobre a produção."
+  },
+  {
+   "id": "c7-17",
+   "topico": "Impactos socioambientais",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "120",
+   "ajuda": "impactos-sociais",
+   "tipo": "mc",
+   "enunciado": "Como a expansão das ferrovias afetou a economia?",
+   "correta": "Facilitou o comércio, a comunicação e a circulação de pessoas e mercadorias, integrando mercados",
+   "erradas": [
+    "Encareceu o transporte e isolou as cidades",
+    "Acabou com o transporte de cargas por navios para sempre",
+    "Não teve efeito econômico, apenas turístico"
+   ],
+   "explicacao": "As locomotivas a vapor revolucionaram o transporte. As ferrovias integraram mercados e impulsionaram o crescimento econômico."
+  },
+  {
+   "id": "c7-18",
+   "topico": "Impactos socioambientais",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "120",
+   "ajuda": "impactos-sociais",
+   "tipo": "lacuna",
+   "enunciado": "A concentração de indústrias provocou uma ______ acelerada, que mudou as cidades e as relações sociais.",
+   "resposta": "urbanização",
+   "aceitas": [
+    "urbanizacao"
+   ],
+   "explicacao": "Muita gente se mudou para perto das fábricas. As cidades cresceram rápido e sem planejamento, o que mudou as condições de vida e de trabalho."
+  },
+  {
+   "id": "c7-19",
+   "topico": "Impactos socioambientais",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "120",
+   "ajuda": "impactos-sociais",
+   "tipo": "vf",
+   "enunciado": "A falta de leis trabalhistas e ambientais no início da industrialização permitiu que indústrias priorizassem o lucro, explorando trabalhadores e degradando o ambiente.",
+   "resposta": true,
+   "explicacao": "Esse modelo deixou desafios que existem até hoje: equilibrar desenvolvimento econômico e sustentabilidade."
+  },
+  {
+   "id": "c7-20",
+   "topico": "Automação e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "121",
+   "ajuda": "impactos-sociais",
+   "tipo": "mc",
+   "enunciado": "O que é automação?",
+   "correta": "O uso de máquinas para fazer tarefas que antes eram feitas por pessoas",
+   "erradas": [
+    "O aumento do salário dos trabalhadores de fábrica",
+    "A proibição do uso de máquinas nas indústrias",
+    "A substituição da eletricidade pelo vapor"
+   ],
+   "explicacao": "A automação já substituiu profissões como as de ascensorista, telefonista, datilógrafo e linotipista, e hoje avança com a inteligência artificial e a robotização."
+  },
+  {
+   "id": "c7-21",
+   "topico": "Automação e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "121",
+   "ajuda": "impactos-sociais",
+   "tipo": "mc",
+   "enunciado": "Segundo o texto sobre automação, qual é um aspecto positivo dela?",
+   "correta": "Ela aumenta a produtividade e pode criar novos tipos de trabalho, sobretudo para quem aprende novas habilidades",
+   "erradas": [
+    "Ela garante que nenhum emprego vai desaparecer",
+    "Ela faz os salários subirem em todas as profissões",
+    "Ela impede que novas tecnologias sejam criadas"
+   ],
+   "explicacao": "É o chamado efeito de deslocamento: a produtividade maior pode aumentar a procura por empregos que não podem ser automatizados e criar ocupações novas."
+  },
+  {
+   "id": "c7-22",
+   "topico": "Automação e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "121",
+   "ajuda": "impactos-sociais",
+   "tipo": "vf",
+   "enunciado": "Um aspecto negativo da automação é que ela pode acabar com algumas ocupações, reduzir a procura por trabalhadores e baixar salários.",
+   "resposta": true,
+   "explicacao": "A preocupação do texto é com a velocidade das mudanças: muitos trabalhadores podem ser afetados em pouco tempo, e isso dificulta criar políticas de proteção."
+  },
+  {
+   "id": "c7-23",
+   "topico": "Máquinas térmicas e trabalho",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "112",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "Por que as máquinas térmicas foram um marco para o transporte?",
+   "correta": "Porque permitiram o transporte em massa de pessoas e cargas, bem mais difícil antes delas",
+   "erradas": [
+    "Porque eliminaram a necessidade de combustível",
+    "Porque deixaram as viagens mais baratas que caminhar",
+    "Porque acabaram com o uso de máquinas simples"
+   ],
+   "explicacao": "Motores de navios e trens tornaram possível mover muita gente e muita carga ao mesmo tempo, o que mudou o comércio e as cidades."
+  },
+  {
+   "id": "c7-24",
+   "topico": "Combustíveis",
+   "capitulo": 7,
+   "foco": false,
+   "pagina": "115",
+   "ajuda": "combustiveis",
+   "tipo": "vf",
+   "enunciado": "O biodiesel é feito de óleos vegetais ou gorduras animais e pode ser misturado ao diesel comum, diminuindo poluentes.",
+   "resposta": true,
+   "explicacao": "O biodiesel é um biocombustível. Misturado ao diesel de petróleo, reduz a emissão de alguns poluentes."
+  },
+  {
+   "id": "mex-09",
+   "topico": "Motor a combustão externa",
+   "capitulo": 6,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "No esquema da máquina a vapor, em que parte o combustível é queimado?",
+   "correta": "Na fornalha, embaixo da caldeira",
+   "erradas": [
+    "Dentro do cilindro, junto com o pistão",
+    "Dentro da própria caldeira, misturado à água",
+    "No condensador, depois que o vapor esfria"
+   ],
+   "explicacao": "O combustível (madeira ou carvão mineral) queima na fornalha. O calor dessa queima evapora a água que está na caldeira, acima dela."
+  },
+  {
+   "id": "mex-10",
+   "topico": "Motor a combustão externa",
+   "capitulo": 6,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "mc",
+   "enunciado": "Qual é a função do condensador na máquina a vapor?",
+   "correta": "Transformar o vapor de volta em água líquida e devolvê-la à caldeira, reiniciando o ciclo",
+   "erradas": [
+    "Aumentar a pressão do vapor antes de ele entrar no cilindro",
+    "Queimar o combustível que sobrou na fornalha",
+    "Guardar o vapor para usar no dia seguinte"
+   ],
+   "explicacao": "No condensador o vapor volta ao estado líquido e é redirecionado para a caldeira. As máquinas com condensador foram as que permitiram navios, locomotivas e as fábricas do século XVIII."
+  },
+  {
+   "id": "mex-11",
+   "topico": "Motor a combustão externa",
+   "capitulo": 6,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "lacuna",
+   "enunciado": "Na máquina a vapor, o pistão movimenta o braço mecânico, que faz girar a roda de ______.",
+   "resposta": "transmissão",
+   "aceitas": [
+    "transmissao",
+    "roda de transmissão"
+   ],
+   "explicacao": "A sequência do esquema é: vapor a alta pressão → pistão → braço mecânico → roda de transmissão. Nas fábricas, essa roda era ligada a correias que moviam outras máquinas."
+  },
+  {
+   "id": "mex-12",
+   "topico": "Motor a combustão externa",
+   "capitulo": 6,
+   "foco": true,
+   "pagina": "107",
+   "ajuda": "combustao-externa",
+   "tipo": "vf",
+   "enunciado": "As primeiras máquinas a vapor foram usadas para extrair água das minas de carvão e eram pouco eficientes.",
+   "resposta": true,
+   "explicacao": "Só com o condensador as máquinas a vapor ficaram eficientes o bastante para mover navios e locomotivas e automatizar o trabalho nas fábricas."
+  },
+  {
+   "id": "mex-13",
+   "topico": "Motor a combustão externa",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-externa",
+   "tipo": "vf",
+   "enunciado": "Nas máquinas a vapor, o combustível era queimado numa fornalha externa e o calor gerado era transferido para a água, transformando-a em vapor.",
+   "resposta": true,
+   "explicacao": "É exatamente isso que faz a combustão ser externa: o fogo fica fora do motor e quem entra no cilindro é o vapor."
+  },
+  {
+   "id": "min-12",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "mc",
+   "enunciado": "Qual peça do motor produz a centelha que dá início à explosão?",
+   "correta": "A vela de ignição",
+   "erradas": [
+    "A válvula de escape",
+    "O virabrequim",
+    "A caldeira"
+   ],
+   "explicacao": "A vela de ignição solta a faísca que acende a mistura de ar e combustível comprimida dentro da câmara de combustão."
+  },
+  {
+   "id": "min-13",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "lacuna",
+   "enunciado": "No ciclo de Otto, a mistura de ar e combustível entra no cilindro pela válvula de ______.",
+   "resposta": "admissão",
+   "aceitas": [
+    "admissao"
+   ],
+   "explicacao": "A válvula de admissão deixa entrar a mistura no primeiro tempo e se fecha na compressão. Os gases queimados saem depois pela válvula de escape."
+  },
+  {
+   "id": "min-14",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "117",
+   "ajuda": "combustao-interna",
+   "tipo": "vf",
+   "enunciado": "Na explosão, depois da centelha, acontece uma expansão sem trocas significativas de calor, que empurra rapidamente o pistão para baixo.",
+   "resposta": true,
+   "explicacao": "A ignição aumenta muito rápido a temperatura da mistura; em seguida vem a expansão, praticamente sem troca de calor, que empurra o pistão e realiza o trabalho."
+  },
+  {
+   "id": "min-15",
+   "topico": "Motor a combustão interna",
+   "capitulo": 7,
+   "foco": true,
+   "pagina": "116",
+   "ajuda": "termodinamica",
+   "tipo": "mc",
+   "enunciado": "No esquema geral de uma máquina térmica, o que acontece com a energia?",
+   "correta": "A máquina recebe calor da fonte quente, cede parte dele à fonte fria e transforma o restante em trabalho mecânico",
+   "erradas": [
+    "A máquina recebe calor da fonte fria e devolve todo ele à fonte quente",
+    "A máquina transforma todo o calor recebido em trabalho mecânico",
+    "A máquina cria energia nova a cada ciclo de funcionamento"
+   ],
+   "explicacao": "Calor recebido da fonte quente, calor cedido à fonte fria e trabalho mecânico na saída: parte da energia sempre se perde, e por isso nenhuma máquina térmica tem rendimento de 100%."
+  }
+ ]
+}

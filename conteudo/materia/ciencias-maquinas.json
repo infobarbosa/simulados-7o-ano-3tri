@@ -1,0 +1,339 @@
+{
+  "arquivo": "ciencias-maquinas",
+  "titulo": "Ciências — Máquinas, motores e atmosfera",
+  "fonte": "Rotas — Ciências 7º ano (Edebê), capítulos 6 e 7",
+  "topicos": {
+    "combustao-externa": {
+      "titulo": "Motor a combustão externa (maria-fumaça)",
+      "icone": "🚂",
+      "pagina": "107, 113 e 117",
+      "blocos": [
+        {"tipo": "texto", "texto": "Combustão externa quer dizer que o combustível queima FORA do cilindro, numa fornalha. O fogo nunca encosta no pistão: quem empurra o pistão é o vapor de água."},
+        {"tipo": "lista", "itens": [
+          "1. O carvão ou a lenha queima na fornalha e libera calor.",
+          "2. O calor aquece a água dentro da caldeira.",
+          "3. A água vira vapor e o vapor fica sob pressão.",
+          "4. O vapor é levado ao cilindro e empurra o pistão.",
+          "5. Hastes ligadas ao pistão giram as rodas da locomotiva.",
+          "6. O vapor já usado e a fumaça da queima saem pela chaminé."
+        ]},
+        {"tipo": "texto", "texto": "A fumaça da chaminé vem da queima do combustível, não do vapor. Por isso a locomotiva a vapor ficou conhecida no Brasil como maria-fumaça."},
+        {"tipo": "tabela", "colunas": ["Peça do esquema", "O que faz"], "linhas": [
+          ["Fornalha", "é onde a madeira ou o carvão queima"],
+          ["Caldeira", "guarda a água, que o calor da fornalha transforma em vapor"],
+          ["Válvula", "deixa o vapor a alta pressão passar para o cilindro"],
+          ["Pistão", "é empurrado pelo vapor e movimenta o braço mecânico"],
+          ["Roda de transmissão", "é girada pelo braço mecânico; nas fábricas, movia outras máquinas por correias"],
+          ["Condensador", "transforma o vapor de volta em água líquida e a devolve à caldeira"]
+        ]},
+        {"tipo": "tabela", "colunas": ["Quem", "Quando", "O que fez"], "linhas": [
+          ["Newcomen", "1712", "motor a vapor para bombear água das minas; desperdiçava muita energia"],
+          ["Watt", "séc. XVIII", "máquina mais eficiente, movia várias máquinas; início da era industrial"]
+        ]},
+        {"tipo": "dica", "texto": "A sequência de energia é sempre a mesma: energia química do combustível → energia térmica (calor) → energia mecânica (movimento)."}
+      ]
+    },
+    "combustao-interna": {
+      "titulo": "Motor a combustão interna (ciclo de Otto)",
+      "icone": "🚗",
+      "pagina": "114 e 117",
+      "blocos": [
+        {"tipo": "texto", "texto": "Aqui a mistura de ar e combustível queima DENTRO do cilindro. Foi a ideia de Nikolaus Otto: trocar o carvão por um combustível líquido derivado do petróleo e queimá-lo dentro do motor. O resultado foram motores menores, mais eficientes e mais fáceis de ligar."},
+        {"tipo": "texto", "texto": "Os motores modernos funcionam em ciclos de quatro tempos:"},
+        {"tipo": "lista", "itens": [
+          "Admissão — o pistão desce e entra no cilindro a mistura de ar e combustível.",
+          "Compressão — as válvulas fecham e o pistão sobe, apertando a mistura.",
+          "Explosão — a centelha da vela acende a mistura; os gases se expandem e empurram o pistão para baixo. É o tempo que realiza o trabalho.",
+          "Descarga — a válvula de escape abre e os gases queimados saem pelo tubo de descarga. Depois o ciclo recomeça."
+        ]},
+        {"tipo": "dica", "texto": "Para lembrar a ordem, use as iniciais A-C-E-D: Admissão, Compressão, Explosão, Descarga."},
+        {"tipo": "tabela", "colunas": ["Peça do esquema", "O que faz"], "linhas": [
+          ["Válvula de admissão", "deixa entrar a mistura de ar e combustível"],
+          ["Câmara de combustão", "é o espaço, acima do pistão, onde a mistura queima"],
+          ["Vela de ignição", "solta a centelha que acende a mistura"],
+          ["Pistão", "sobe e desce dentro do cilindro"],
+          ["Biela e virabrequim", "transformam o vai e vem do pistão em movimento de rotação"],
+          ["Válvula de escape", "deixa sair os gases da queima"]
+        ]},
+        {"tipo": "texto", "texto": "O problema é ambiental: esses motores queimam combustíveis fósseis e lançam no ar gases que poluem e intensificam o efeito estufa. Por isso crescem as alternativas, como os motores elétricos, que não têm combustão."}
+      ]
+    },
+    "chuva-acida": {
+      "titulo": "Chuva ácida",
+      "icone": "🌧️",
+      "pagina": "120",
+      "blocos": [
+        {"tipo": "texto", "texto": "A queima de combustíveis fósseis em indústrias, termoelétricas e veículos libera dois tipos de gás importantes: os óxidos de enxofre e os óxidos de nitrogênio."},
+        {"tipo": "texto", "texto": "Na atmosfera esses gases reagem com o vapor de água e formam ácidos — ácido sulfúrico e ácido nítrico. Quando chove, os ácidos descem com a água: é a chuva ácida."},
+        {"tipo": "lista", "itens": [
+          "Corrói monumentos, estátuas, telhados e estruturas de metal.",
+          "Acidifica o solo e a água de rios e lagos, prejudicando peixes e plantas.",
+          "Danifica folhas e raízes, afetando plantações e florestas.",
+          "Pode cair longe de onde os gases foram emitidos, porque o vento carrega os poluentes."
+        ]},
+        {"tipo": "dica", "texto": "O que ajuda: filtros nas chaminés das indústrias, catalisadores nos veículos, combustíveis com menos enxofre e troca dos fósseis por fontes renováveis."}
+      ]
+    },
+    "inversao-termica": {
+      "titulo": "Inversão térmica",
+      "icone": "🌫️",
+      "pagina": "120",
+      "blocos": [
+        {"tipo": "texto", "texto": "No dia normal, o ar junto ao solo é o mais quente. Ar quente é menos denso, então ele sobe e leva os poluentes para cima, onde se espalham."},
+        {"tipo": "texto", "texto": "Na inversão térmica essa ordem se inverte: uma camada de ar frio fica presa junto ao solo, com uma camada de ar quente acima dela. O ar frio é mais denso e não sobe; o ar quente funciona como uma tampa."},
+        {"tipo": "lista", "itens": [
+          "É mais comum no inverno, em noites e manhãs de céu limpo, quando o solo esfria rápido.",
+          "Acontece muito em grandes cidades, como São Paulo.",
+          "Os poluentes ficam concentrados perto do chão, onde as pessoas respiram.",
+          "Aumentam as crises de asma, bronquite e outros problemas respiratórios.",
+          "Costuma se desfazer quando o Sol aquece o solo ao longo do dia, ou com vento e chuva."
+        ]},
+        {"tipo": "dica", "texto": "Cuidado com a pegadinha: a inversão térmica não produz poluentes. Ela só impede que os poluentes já emitidos se espalhem."}
+      ]
+    },
+    "efeito-estufa": {
+      "titulo": "Efeito estufa",
+      "icone": "♨️",
+      "pagina": "115 e 120",
+      "blocos": [
+        {"tipo": "texto", "texto": "O efeito estufa é um processo NATURAL e necessário. A luz do Sol atravessa a atmosfera e aquece a superfície da Terra; o planeta devolve parte desse calor, e alguns gases da atmosfera retêm uma parcela dele, como o vidro de uma estufa de plantas."},
+        {"tipo": "texto", "texto": "Graças a isso a temperatura média da Terra permite a vida. Sem efeito estufa nenhum, o planeta seria frio demais."},
+        {"tipo": "lista", "itens": [
+          "Gases de efeito estufa: gás carbônico (CO₂), metano, óxido nitroso e vapor de água.",
+          "Gás carbônico: vem sobretudo da queima de combustíveis fósseis e das queimadas.",
+          "Metano: vem de lixões, aterros, criação de gado e extração de fósseis."
+        ]},
+        {"tipo": "dica", "texto": "O problema não é o efeito estufa, e sim a intensificação dele: o ser humano lança gases demais, a atmosfera retém calor em excesso e o planeta esquenta."}
+      ]
+    },
+    "aquecimento-global": {
+      "titulo": "Aquecimento global",
+      "icone": "🌡️",
+      "pagina": "120",
+      "blocos": [
+        {"tipo": "texto", "texto": "Aquecimento global é o aumento da temperatura média do planeta, provocado principalmente pela intensificação do efeito estufa pela ação humana."},
+        {"tipo": "tabela", "colunas": ["Conceito", "O que é"], "linhas": [
+          ["Efeito estufa", "o processo natural que retém calor na atmosfera"],
+          ["Aquecimento global", "o aumento da temperatura média causado pelo excesso desse processo"]
+        ]},
+        {"tipo": "lista", "itens": [
+          "Derretimento de geleiras e calotas polares.",
+          "Elevação do nível do mar, ameaçando cidades do litoral.",
+          "Ondas de calor mais frequentes e mais intensas.",
+          "Branqueamento de corais e risco para muitas espécies."
+        ]},
+        {"tipo": "texto", "texto": "As causas principais são a queima de combustíveis fósseis e o desmatamento: as árvores retiram gás carbônico do ar, e derrubá-las ou queimá-las devolve esse carbono à atmosfera."},
+        {"tipo": "dica", "texto": "O que ajuda: trocar fósseis por fontes renováveis (solar, eólica, hidrelétrica), economizar energia, usar transporte coletivo e conter o desmatamento."}
+      ]
+    },
+    "mudancas-climaticas": {
+      "titulo": "Mudanças climáticas",
+      "icone": "🌎",
+      "pagina": "120",
+      "blocos": [
+        {"tipo": "texto", "texto": "Antes de tudo, duas palavras que não são sinônimas: tempo é o estado da atmosfera agora (pode mudar em horas); clima é o padrão observado durante muitos anos numa região."},
+        {"tipo": "texto", "texto": "Mudanças climáticas são alterações de longo prazo nesses padrões: temperatura, chuvas e ventos. Não é só \"ficar mais quente\"."},
+        {"tipo": "lista", "itens": [
+          "Secas mais longas e severas em algumas regiões.",
+          "Chuvas extremas, enchentes e deslizamentos em outras.",
+          "Tempestades e furacões mais fortes.",
+          "Prejuízo à agricultura, ao abastecimento de água e à saúde das pessoas."
+        ]},
+        {"tipo": "texto", "texto": "A causa principal é a emissão de gases de efeito estufa, em boa parte pelas máquinas térmicas que queimam combustíveis fósseis na indústria, na geração de eletricidade e nos transportes."},
+        {"tipo": "dica", "texto": "O enfrentamento passa pela transição para energias renováveis e por escolhas do dia a dia: menos desperdício de energia, transporte coletivo, bicicleta, reciclagem e nada de queimar lixo."}
+      ]
+    },
+    "camada-ozonio": {
+      "titulo": "Camada de ozônio",
+      "icone": "🛡️",
+      "pagina": "120",
+      "blocos": [
+        {"tipo": "texto", "texto": "A camada de ozônio é uma região da estratosfera (mais ou menos de 20 km a 40 km de altitude) rica no gás ozônio. Ela funciona como o filtro solar do planeta: absorve a maior parte da radiação ultravioleta (UV) que vem do Sol."},
+        {"tipo": "lista", "itens": [
+          "Quem a destrói: os CFCs (clorofluorcarbonos), usados em aerossóis, geladeiras, aparelhos de ar-condicionado e espumas.",
+          "Como: o cloro liberado pelos CFCs destrói as moléculas de ozônio.",
+          "Onde apareceu o \"buraco\": sobre a Antártida, percebido nos anos 1980.",
+          "Consequências de passar mais UV: câncer de pele, queimaduras, catarata, queda de imunidade e danos a plantas e ao plâncton."
+        ]},
+        {"tipo": "texto", "texto": "Com o Protocolo de Montreal (1987), os países reduziram drasticamente o uso de CFCs — e a camada de ozônio vem se recuperando."},
+        {"tipo": "dica", "texto": "Não confunda: o buraco na camada de ozônio deixa passar mais radiação ultravioleta; o aquecimento global vem do excesso de gases que retêm calor. São problemas diferentes."}
+      ]
+    },
+    "o-que-e-maquina": {
+      "titulo": "O que é uma máquina",
+      "icone": "⚙️",
+      "pagina": "96, 99 e 100",
+      "blocos": [
+        {"tipo": "texto", "texto": "Máquina é qualquer aparelho que modifica uma força. Não precisa ter motor, botão nem eletricidade: uma tesoura é máquina."},
+        {"tipo": "lista", "itens": [
+          "Máquinas simples: geralmente formadas por uma só peça — roda, alavanca, polia, plano inclinado e engrenagem.",
+          "Elas existem desde a Antiguidade: o Homo habilis já usava ferramentas rústicas há cerca de 1,6 milhão de anos.",
+          "Arquimedes, estudioso grego do século III a.C., explicou o princípio da alavanca e aperfeiçoou o parafuso e as roldanas."
+        ]},
+        {"tipo": "dica", "texto": "O parafuso de Arquimedes, criado para tirar água do Nilo, continua em uso hoje em bombas de água e no transporte de grãos."}
+      ]
+    },
+    "forca-vetor": {
+      "titulo": "Força, vetor e grandeza vetorial",
+      "icone": "➡️",
+      "pagina": "99",
+      "blocos": [
+        {"tipo": "texto", "texto": "No dia a dia, força lembra esforço físico. Na Física, força é o agente capaz de mudar o movimento de um corpo ou de deformá-lo."},
+        {"tipo": "texto", "texto": "A massa precisa só de número e unidade (10 kg). A força é uma grandeza vetorial: precisa de três coisas."},
+        {"tipo": "tabela", "colunas": ["Característica", "O que é"], "linhas": [
+          ["Intensidade", "quanto de força, em número e unidade (o tamanho da seta)"],
+          ["Direção", "a linha em que a força age: horizontal, vertical…"],
+          ["Sentido", "para qual lado dessa linha a força aponta"]
+        ]},
+        {"tipo": "texto", "texto": "O vetor é a seta (segmento de reta orientado) que representa essas três características. As máquinas podem mudar uma, duas ou todas elas."}
+      ]
+    },
+    "alavancas": {
+      "titulo": "Alavancas e seus três tipos",
+      "icone": "🔧",
+      "pagina": "100 e 101",
+      "blocos": [
+        {"tipo": "texto", "texto": "Alavanca é uma barra rígida que gira em torno de um ponto de apoio (também chamado ponto fixo ou fulcro) e multiplica a força aplicada."},
+        {"tipo": "lista", "itens": [
+          "Força potente: a que nós aplicamos, que move a alavanca.",
+          "Força resistente: a que se opõe, aquela que queremos vencer.",
+          "Ponto de apoio: onde a alavanca gira.",
+          "Regra: quanto maior a distância entre a força potente e o ponto de apoio, menor a força necessária."
+        ]},
+        {"tipo": "tabela", "colunas": ["Tipo", "O que fica no meio", "Exemplos"], "linhas": [
+          ["Interfixa", "o ponto de apoio", "gangorra, tesoura, alicate, pé de cabra"],
+          ["Inter-resistente", "a força resistente", "carrinho de mão, quebra-nozes, abridor de garrafas"],
+          ["Interpotente", "a força potente", "pinça, cortador de unha, pá, hashis"]
+        ]},
+        {"tipo": "dica", "texto": "\"Inter-\" quer dizer no meio. Interfixa → o fixo no meio; inter-resistente → a resistente no meio; interpotente → a potente no meio."},
+        {"tipo": "texto", "texto": "No corpo humano também há alavancas: os ossos são as barras, as articulações são os pontos de apoio, os músculos fazem a força potente e a carga é a força resistente."}
+      ]
+    },
+    "roda-polias": {
+      "titulo": "Roda e polias (roldanas)",
+      "icone": "🛞",
+      "pagina": "100 e 102",
+      "blocos": [
+        {"tipo": "texto", "texto": "A roda é um disco que gira em torno de um eixo central. Ela troca o arrastar pelo rolar e, assim, diminui o atrito: é preciso menos força para mover a carga."},
+        {"tipo": "texto", "texto": "A polia (ou roldana) é uma roda com um canal por onde passa uma corda ou um cabo. Existem duas:"},
+        {"tipo": "tabela", "colunas": ["", "Polia fixa", "Polia móvel"], "linhas": [
+          ["Eixo", "preso numa parede ou no teto", "move-se junto com a carga"],
+          ["Muda a intensidade?", "não reduz o esforço", "sim: cada polia móvel reduz a força pela metade"],
+          ["O que muda", "a direção e o sentido da força", "a intensidade da força"],
+          ["Onde aparece", "poços, aparelhos de academia", "guindastes e sistemas de içamento"]
+        ]},
+        {"tipo": "dica", "texto": "Com a polia fixa você puxa a corda para baixo em vez de levantar o peso para cima: o esforço é o mesmo, mas a posição é muito mais confortável."}
+      ]
+    },
+    "engrenagens": {
+      "titulo": "Engrenagens",
+      "icone": "⚙️",
+      "pagina": "103",
+      "blocos": [
+        {"tipo": "texto", "texto": "Engrenagens são discos com dentes, ligados entre si por correias, correntes ou dente a dente. A combinação delas define a força e a velocidade transmitidas."},
+        {"tipo": "texto", "texto": "Regra principal: quanto mais dentes uma engrenagem tem, menos voltas ela dá — ou seja, menor a velocidade (e maior a força)."},
+        {"tipo": "lista", "itens": [
+          "Coroa: a engrenagem maior, ligada ao pedal da bicicleta.",
+          "Catraca ou pinhão: a engrenagem menor, ligada à roda.",
+          "Pinhões menores deixam a bicicleta mais rápida.",
+          "Pinhões maiores deixam a pedalada mais lenta e leve, boa para subidas íngremes."
+        ]},
+        {"tipo": "dica", "texto": "Se a coroa é duas vezes maior que a catraca, a cada volta do pedal a roda dá duas voltas."}
+      ]
+    },
+    "plano-inclinado": {
+      "titulo": "Plano inclinado e rampas",
+      "icone": "📐",
+      "pagina": "104 e 105",
+      "blocos": [
+        {"tipo": "texto", "texto": "Plano inclinado é qualquer superfície rígida, plana e inclinada em relação ao plano horizontal. A rampa é o exemplo mais conhecido."},
+        {"tipo": "texto", "texto": "A troca que ele oferece: quanto menor o ângulo de inclinação, menor a força necessária — mas maior o caminho a percorrer. É por isso que estradas de montanha são cheias de curvas."},
+        {"tipo": "lista", "itens": [
+          "Acessibilidade: rampas são essenciais para pessoas com mobilidade reduzida, e por lei os espaços devem ser acessíveis.",
+          "Ter rampa não basta: precisa de inclinação adequada, corrimão e piso antiderrapante.",
+          "Rampa de escape: fica na lateral de rodovias, em descidas fortes, para frear veículos sem freio. A superfície aumenta a resistência ao movimento e a leve subida ajuda a parar."
+        ]}
+      ]
+    },
+    "maquinas-termicas": {
+      "titulo": "Máquinas térmicas e energia térmica",
+      "icone": "🔥",
+      "pagina": "106 e 107",
+      "blocos": [
+        {"tipo": "texto", "texto": "Energia térmica é a energia ligada à agitação das partículas que formam a matéria. Máquina térmica é o aparelho que transforma energia térmica em energia mecânica, isto é, em movimento."},
+        {"tipo": "lista", "itens": [
+          "Exemplos: máquina a vapor, turbina a vapor e motor a combustão.",
+          "A primeira máquina térmica registrada é a eolípila, de Heron de Alexandria, no século I.",
+          "Na eolípila, a esfera com água é aquecida, a água vira vapor, o vapor sai pelos tubos e a esfera gira."
+        ]},
+        {"tipo": "dica", "texto": "Máquinas simples modificam uma força, mas têm limite. As máquinas térmicas trazem outra forma de energia para a tarefa — por isso ampliaram tanto o que o ser humano consegue fazer."}
+      ]
+    },
+    "termodinamica": {
+      "titulo": "Trabalho e leis da Termodinâmica",
+      "icone": "🔁",
+      "pagina": "112 e 116",
+      "blocos": [
+        {"tipo": "texto", "texto": "Trabalho é o processo em que a energia é transferida ou transformada de uma forma em outra, geralmente com movimento ou mudança de estado físico. Motor é a máquina que transforma qualquer energia em energia mecânica."},
+        {"tipo": "lista", "itens": [
+          "1ª lei (conservação): a energia não é criada nem destruída, só transformada.",
+          "2ª lei: o calor flui espontaneamente do corpo mais quente para o mais frio, até o equilíbrio térmico.",
+          "Fonte quente: de onde vem o calor (a queima do combustível).",
+          "Fonte fria: para onde vai a energia que não virou trabalho (o ambiente).",
+          "Consequência: é impossível transformar 100% do calor em trabalho útil."
+        ]},
+        {"tipo": "dica", "texto": "O moto-contínuo é impossível justamente por isso: nenhuma máquina produz mais energia do que consome (1ª lei), nem aproveita todo o calor sem perdas (2ª lei)."}
+      ]
+    },
+    "combustiveis": {
+      "titulo": "Tipos de combustíveis",
+      "icone": "⛽",
+      "pagina": "115",
+      "blocos": [
+        {"tipo": "texto", "texto": "Combustíveis são substâncias usadas para gerar energia por combustão. O livro os separa em três categorias:"},
+        {"tipo": "tabela", "colunas": ["Categoria", "Exemplos", "Observação"], "linhas": [
+          ["Fósseis", "petróleo, gás natural, carvão", "alta densidade energética, mas finitos e emitem muitos gases de efeito estufa"],
+          ["Biocombustíveis", "etanol, biodiesel", "feitos de biomassa; em teoria, emissão neutra de carbono"],
+          ["Alternativos", "hidrogênio, eletricidade", "menor impacto, mas ainda há desafios de produção e infraestrutura"]
+        ]},
+        {"tipo": "lista", "itens": [
+          "Etanol: fermentação dos açúcares da cana-de-açúcar ou do milho.",
+          "Biodiesel: óleos vegetais ou gorduras animais, misturado ao diesel comum.",
+          "Hidrogênio: usado em células de combustível, libera água como subproduto.",
+          "Veículos elétricos: baterias recarregáveis, sem combustão — a sustentabilidade depende de como a eletricidade é gerada."
+        ]}
+      ]
+    },
+    "rendimento": {
+      "titulo": "Rendimento dos motores",
+      "icone": "📊",
+      "pagina": "118 e 119",
+      "blocos": [
+        {"tipo": "texto", "texto": "Rendimento (ou eficiência) mede quanto da energia do combustível o motor consegue transformar em trabalho útil."},
+        {"tipo": "tabela", "colunas": ["", "Motor eficiente", "Motor de baixo rendimento"], "linhas": [
+          ["Combustível", "gasta menos para o mesmo trabalho", "gasta mais"],
+          ["Custo", "menor custo de operação", "mais gasto de dinheiro"],
+          ["Ambiente", "emite menos poluentes", "mais poluição e danos ambientais"]
+        ]},
+        {"tipo": "dica", "texto": "A busca por motores elétricos e híbridos mostra a tentativa de equilibrar desenvolvimento econômico e sustentabilidade ambiental."}
+      ]
+    },
+    "impactos-sociais": {
+      "titulo": "Impactos sociais e automação",
+      "icone": "🏭",
+      "pagina": "120 e 121",
+      "blocos": [
+        {"tipo": "texto", "texto": "As máquinas térmicas impulsionaram a Revolução Industrial. O trabalho artesanal deu lugar à produção em massa, com tarefas divididas em partes pequenas e repetitivas; os patrões ganharam mais controle e os trabalhadores passavam o dia na mesma tarefa."},
+        {"tipo": "lista", "itens": [
+          "As locomotivas a vapor e as ferrovias facilitaram comércio, comunicação e circulação de pessoas e mercadorias.",
+          "A concentração de indústrias provocou urbanização acelerada e mudou as cidades.",
+          "A falta de leis trabalhistas e ambientais permitiu exploração dos trabalhadores e degradação do ambiente."
+        ]},
+        {"tipo": "texto", "texto": "Automação é o uso de máquinas para fazer tarefas antes feitas por pessoas. Ela já substituiu profissões como ascensorista, telefonista e datilógrafo, e hoje avança com a inteligência artificial."},
+        {"tipo": "tabela", "colunas": ["Lado negativo", "Lado positivo"], "linhas": [
+          ["pode acabar com ocupações, reduzir a procura por trabalhadores e baixar salários", "aumenta a produtividade, pode criar novos trabalhos e valorizar quem aprende novas habilidades"]
+        ]}
+      ]
+    }
+  }
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8">
+<base href="../"><title>harness</title>
+<!-- Teste de interação: joga uma rodada clicando na tela (o motor sozinho é testado em index.html). --><link rel="stylesheet" href="css/app.css"></head>
+<body>
+<pre id="log">iniciando
+</pre>
+<div id="palco"></div>
+<script type="module">
+const log = document.getElementById("log");
+const diga = (t) => { log.textContent += t + "\n"; };
+const ok = (c, t) => diga((c ? "OK   " : "FALHA ") + t);
+try {
+  const { prefs } = await import("./js/util.js");
+  prefs.set("som", false);                         // sem AudioContext no headless
+  const A = await import("./js/api.js");
+  const { telaQuiz } = await import("./js/quiz.js");
+  localStorage.clear();
+  A.aceitarTermos(1);
+  await A.salvarNome("Teste");
+  diga("nome e termos ok");
+
+  const banco = await (await fetch("conteudo/ciencias-caps-6-7.json")).json();
+  const porId = Object.fromEntries(banco.questoes.map((q) => [q.id, q]));
+  const gabarito = (q) => q.tipo === "mc" ? q.correta : q.tipo === "vf" ? (q.resposta ? "Verdadeiro" : "Falso") : q.resposta;
+
+  const cat = await A.api("/api/catalogo");
+  ok(cat.disciplinas.length === 1 && cat.disciplinas[0].total === banco.questoes.length, "catálogo: " + JSON.stringify(cat.disciplinas[0]));
+
+  const d0 = await A.api("/api/disciplinas/ciencias");
+  ok(d0.trilhas.length === 4, "trilhas: " + d0.trilhas.map((t) => `${t.id}=${t.total}`).join(" "));
+
+  // --- rodada da trilha "foco", respondida pela tela (telaQuiz), não pela api
+  const r = await A.api("/api/rodadas", { json: { disciplina: "ciencias", trilha: "foco" } });
+  diga("rodada " + r.id + " criada");
+  const vista = await A.api(`/api/rodadas/${r.id}`);
+  ok(vista.questoes.length === 20, "20 questões sorteadas");
+  ok(vista.questoes.every((q) => porId[q.id].foco === true), "todas do foco da prova");
+  ok(vista.materia === "ciencias-maquinas", "mini-aulas ligadas: " + vista.materia);
+
+  // outra trilha com rodada aberta deve ser recusada
+  try { await A.api("/api/rodadas", { json: { disciplina: "ciencias", trilha: "cap6" } }); ok(false, "deveria recusar troca de trilha"); }
+  catch (e) { ok(e.status === 409, "troca de trilha com rodada aberta: " + e.message); }
+
+  const palco = document.getElementById("palco");
+  await telaQuiz(palco, r.id, { estagio: "adulto" });
+  diga("tela do quiz montada");
+
+  // botão de conteúdo na primeira questão
+  const bMateria = palco.querySelector(".botao-materia");
+  ok(!!bMateria, "botão '" + (bMateria ? bMateria.textContent : "ausente") + "'");
+  bMateria.click();
+  await new Promise((f) => setTimeout(f, 120));
+  const modal = document.querySelector(".materia");
+  ok(!!modal, "mini-aula abriu: " + (modal ? modal.querySelector(".materia-titulo").textContent : "não abriu"));
+  ok(!!modal.querySelector(".materia-corpo").textContent.trim(), "mini-aula tem texto");
+  modal.querySelector(".materia-rodape .botao").click();
+  ok(!document.querySelector(".materia"), "mini-aula fechou");
+
+  // responde as 20: as 3 primeiras erradas de propósito, o resto certo
+  let feitas = 0, erradas = 0;
+  for (let n = 0; n < 20; n++) {
+    const enunciado = palco.querySelector(".enunciado");
+    if (!enunciado) break;
+    const q = banco.questoes.find((x) => x.enunciado === enunciado.textContent);
+    if (!q) { ok(false, "questão não encontrada: " + enunciado.textContent.slice(0, 40)); break; }
+    const errar = feitas < 3;
+    const certo = gabarito(q);
+    if (q.tipo === "lacuna") {
+      const campo = palco.querySelector("input.campo");
+      campo.value = errar ? "resposta errada" : certo;
+      campo.dispatchEvent(new Event("input"));
+    } else {
+      const botoes = [...palco.querySelectorAll(".opcao")];
+      const alvo = errar ? botoes.find((b) => b.querySelector(".opcao-texto").textContent !== certo)
+                         : botoes.find((b) => b.querySelector(".opcao-texto").textContent === certo);
+      alvo.click();
+    }
+    palco.querySelector(".quiz-rodape .botao:not(.botao-materia)").click();
+    await new Promise((f) => setTimeout(f, 60));
+    const rodape = palco.querySelector(".quiz-rodape");
+    if (errar) {
+      erradas++;
+      if (feitas === 0) ok(rodape.className.includes("erro") && !!rodape.querySelector(".botao-materia"), "erro: feedback laranja com '📖 Ler o conteúdo'");
+    } else if (feitas === 3) {
+      ok(rodape.className.includes("ok") && !!rodape.querySelector(".explicacao").textContent, "acerto: feedback com explicação");
+    }
+    feitas++;
+    rodape.querySelector(".botao:not(.botao-materia)").click();
+    await new Promise((f) => setTimeout(f, 60));
+  }
+  ok(feitas === 20, "respondeu " + feitas + " questões (" + erradas + " erradas de propósito)");
+
+  const fim = await A.api(`/api/rodadas/${r.id}`);
+  ok(fim.concluida && fim.pontos === 17 && fim.nota === 8.5, `nota ${fim.nota}, acertos ${fim.pontos}/${fim.total}, xp ${fim.xp}`);
+  ok(!fim.trofeu, "sem troféu com 8,5 (precisa de 9)");
+  const e1 = await A.api("/api/estado");
+  ok(e1.xp === 170 && e1.rodadas === 1, `estado: xp ${e1.xp}, nível ${e1.nivel}, rodadas ${e1.rodadas}, vistas ${e1.banco.vistas}/${e1.banco.total}`);
+
+  // treino das erradas
+  await telaQuiz(palco, r.id, { revisao: true, estagio: "adulto" });
+  const enun = palco.querySelector(".enunciado");
+  ok(!!enun, "treino das erradas abriu com " + (enun ? "questão" : "nada"));
+
+  // rodada nova da trilha cap6, agora pela api, para conferir troféu e progresso por trilha
+  const r2 = await A.api("/api/rodadas", { json: { disciplina: "ciencias", trilha: "cap6", descartar: true } });
+  const v2 = await A.api(`/api/rodadas/${r2.id}`);
+  ok(v2.questoes.every((q) => porId[q.id].capitulo === 6), "trilha cap6 só com questões do capítulo 6");
+  for (const q of v2.questoes) {
+    await A.api(`/api/rodadas/${r2.id}/respostas`, { json: { questao_id: q.id, resposta: gabarito(porId[q.id]), duracao_s: 100 } });
+  }
+  const f2 = await A.api(`/api/rodadas/${r2.id}/concluir`, { json: { duracao_s: 120 } });
+  ok(f2.nota === 10 && f2.trofeu, `rodada 2: nota ${f2.nota}, troféu ${f2.trofeu}, xp ${f2.xp}`);
+  ok(f2.conquistas_novas.length >= 2, "conquistas novas: " + f2.conquistas_novas.map((c) => c.nome).join(", "));
+  const t = await A.api("/api/trofeus");
+  ok(t.length === 1 && t[0].disciplina_nome === "Ciências", "estante: " + JSON.stringify(t[0]));
+  const d1 = await A.api("/api/disciplinas/ciencias");
+  ok(d1.trilhas.find((x) => x.id === "cap6").melhor_nota === 10, "melhor nota por trilha: " +
+    d1.trilhas.map((x) => `${x.id}=${x.melhor_nota ?? "-"} (${x.vistas}/${x.total})`).join(" "));
+
+  // backup
+  const copia = await A.exportarProgresso();
+  await A.recomecar();
+  ok((await A.api("/api/estado")).rodadas === 0, "recomeçar zera");
+  await A.importarProgresso(copia);
+  ok((await A.api("/api/estado")).rodadas === 2, "backup restaura as 2 rodadas");
+  diga("FIM");
+} catch (e) {
+  diga("EXCEÇÃO: " + (e && e.stack || e));
+}
+</script>
+</body>
+</html>
