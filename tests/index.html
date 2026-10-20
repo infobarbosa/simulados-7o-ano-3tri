@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Testes do motor</title>
+  <style>body{font:16px system-ui;padding:1rem}li.ok{color:#2a7d00}li.erro{color:#b00020;font-weight:700}</style>
+</head>
+<body>
+  <h1>Testes do motor</h1>
+  <p>Abra esta página por um servidor local (ex.: <code>python3 -m http.server</code> na raiz do projeto, depois <code>/tests/</code>).</p>
+  <ul id="lista"></ul>
+  <script type="module">
+    import * as M from "../js/motor.js";
+    const catalogo = await (await fetch("../conteudo/catalogo.json")).json();
+    const bancos = {};
+    const materias = {};
+    for (const d of catalogo.disciplinas) {
+      bancos[d.id] = await (await fetch(`../conteudo/${d.banco}`)).json();
+      if (bancos[d.id].materia) {
+        materias[d.id] = await (await fetch(`../conteudo/materia/${bancos[d.id].materia}.json`)).json();
+      }
+    }
+    const qs = Object.values(bancos).flatMap((b) => b.questoes);
+    const lista = document.getElementById("lista");
+    let falhas = 0, total = 0;
+    const igual = (a, b, msg) => { if (JSON.stringify(a) !== JSON.stringify(b)) throw new Error(`${msg || ""} esperado ${JSON.stringify(b)}, veio ${JSON.stringify(a)}`); };
+    const ok = (c, msg) => { if (!c) throw new Error(msg || "condição falsa"); };
+    function teste(nome, fn) {
+      total++;
+      const li = document.createElement("li");
+      try { fn(); li.className = "ok"; li.textContent = "✓ " + nome; }
+      catch (e) { falhas++; li.className = "erro"; li.textContent = `✗ ${nome}: ${e.message}`; }
+      lista.append(li);
+    }
+
+    teste("todos os bancos do catálogo são válidos", () => {
+      for (const [id, b] of Object.entries(bancos)) igual(M.validar(b), [], `banco ${id}:`);
+      ok(qs.length >= 100, `o banco tem ${qs.length} questões`);
+    });
+
+    teste("ids de questão não se repetem entre bancos", () => {
+      igual(new Set(qs.map((q) => q.id)).size, qs.length);
+    });
+
+    teste("validar acusa problemas", () => {
+      const ruim = { questoes: [
+        { id: "x1", topico: "x", enunciado: "e", explicacao: "x", tipo: "mc", correta: "a", erradas: ["a", "b"] },
+        { id: "x1", topico: "x", enunciado: "e", explicacao: "x", tipo: "vf", resposta: "sim" },
+        { id: 7, topico: "x", enunciado: "e", explicacao: "x", tipo: "vf", resposta: true },
+      ] };
+      const p = M.validar(ruim).join("|");
+      ok(p.includes("repetidas") && p.includes("repetido") && p.includes("true ou false"), p);
+    });
+
+    teste("cada trilha do catálogo tem questões e o filtro casa", () => {
+      for (const d of catalogo.disciplinas) {
+        for (const t of d.trilhas) {
+          const sel = M.filtrar(bancos[d.id].questoes, t.filtro);
+          ok(sel.length > 0, `trilha ${t.id} ficou vazia`);
+          for (const [campo, valor] of Object.entries(t.filtro)) {
+            ok(sel.every((q) => q[campo] === valor), `trilha ${t.id}: questão fora do filtro`);
+          }
+        }
+        const tudo = d.trilhas.find((t) => Object.keys(t.filtro).length === 0);
+        if (tudo) igual(M.filtrar(bancos[d.id].questoes, tudo.filtro).length, bancos[d.id].questoes.length);
+      }
+    });
+
+    teste("toda questão tem capítulo, marca de foco, assunto e página", () => {
+      for (const q of qs) {
+        ok(Number.isInteger(q.capitulo), `questão ${q.id}: capítulo`);
+        ok(typeof q.foco === "boolean", `questão ${q.id}: foco`);
+        ok(q.topico && q.pagina, `questão ${q.id}: tópico/página`);
+      }
+    });
+
+    teste("toda questão aponta para uma mini-aula existente, e toda mini-aula é usada", () => {
+      for (const d of catalogo.disciplinas) {
+        const mat = materias[d.id];
+        ok(mat, `disciplina ${d.id} sem arquivo de mini-aulas`);
+        const usados = new Set();
+        for (const q of bancos[d.id].questoes) {
+          ok(q.ajuda, `questão ${q.id} sem 'ajuda'`);
+          ok(mat.topicos[q.ajuda], `questão ${q.id}: tópico '${q.ajuda}' não existe`);
+          usados.add(q.ajuda);
+        }
+        for (const chave of Object.keys(mat.topicos)) ok(usados.has(chave), `tópico '${chave}' não é usado por nenhuma questão`);
+      }
+    });
+
+    teste("blocos das mini-aulas têm tipo conhecido e conteúdo", () => {
+      const tipos = new Set(["texto", "lista", "exemplos", "tabela", "dica"]);
+      for (const mat of Object.values(materias)) {
+        for (const [chave, t] of Object.entries(mat.topicos)) {
+          ok(t.titulo && Array.isArray(t.blocos) && t.blocos.length, `tópico ${chave} vazio`);
+          for (const b of t.blocos) {
+            ok(tipos.has(b.tipo), `tópico ${chave}: bloco '${b.tipo}' desconhecido`);
+            if (b.tipo === "lista") ok(b.itens?.length, `tópico ${chave}: lista vazia`);
+            else if (b.tipo === "exemplos") ok(b.itens?.every((i) => i.frase), `tópico ${chave}: exemplo sem frase`);
+            else if (b.tipo === "tabela") {
+              ok(b.colunas?.length && b.linhas?.length, `tópico ${chave}: tabela incompleta`);
+              ok(b.linhas.every((l) => l.length === b.colunas.length), `tópico ${chave}: linha com número de colunas diferente`);
+            } else ok(b.texto, `tópico ${chave}: bloco sem texto`);
+          }
+        }
+      }
+    });
+
+    teste("lacuna: maiúsculas, espaços, pontuação, acento e sinônimos", () => {
+      const q = { tipo: "lacuna", resposta: "caldeira", aceitas: ["a caldeira"] };
+      ok(M.corrigir(q, " Caldeira. ").correta);
+      const r = M.corrigir(q, "caldeíra");
+      ok(r.correta && r.aviso === "acento");
+      ok(!M.corrigir(q, "cilindro").correta);
+      ok(!M.corrigir(q, "").correta);
+    });
+
+    teste("lacuna: números equivalentes", () => {
+      const q = { tipo: "lacuna", resposta: "14,7", aceitas: ["14,7%"] };
+      ok(M.corrigir(q, "14.7").correta && M.corrigir(q, "14,7%").correta);
+      ok(!M.corrigir(q, "147").correta);
+    });
+
+    teste("múltipla escolha e V/F", () => {
+      const mc = { tipo: "mc", correta: "Compressão", erradas: ["a", "b"] };
+      ok(M.corrigir(mc, "Compressão").correta && !M.corrigir(mc, "a").correta);
+      const vf = { tipo: "vf", resposta: false };
+      ok(M.corrigir(vf, "Falso").correta && !M.corrigir(vf, "Verdadeiro").correta);
+    });
+
+    teste("todas as questões do banco são corrigidas como certas com o próprio gabarito", () => {
+      for (const q of qs) {
+        const resp = q.tipo === "mc" ? q.correta : q.tipo === "vf" ? (q.resposta ? "Verdadeiro" : "Falso") : q.resposta;
+        ok(M.corrigir(q, resp).correta, `questão ${q.id}`);
+        if (q.tipo === "mc") for (const e of q.erradas) ok(!M.corrigir(q, e).correta, `questão ${q.id}: errada aceita`);
+        if (q.tipo === "lacuna") for (const a of q.aceitas || []) ok(M.corrigir(q, a).correta, `questão ${q.id}: aceita "${a}"`);
+      }
+    });
+
+    teste("sorteio: nunca vistas primeiro, depois as que foram erradas", () => {
+      const pool = qs.slice(0, 40);
+      const hist = {};
+      pool.slice(0, 30).forEach((q, i) => { hist[q.id] = { vezes: 1, ultima_correta: true, ultima_em: `2026-10-0${1 + (i % 5)}T10:00:00` }; });
+      pool.slice(0, 5).forEach((q) => { hist[q.id].ultima_correta = false; });
+      const ids = M.sortearRodada(pool, hist, M.criarRng(1));
+      igual(ids.length, 20); igual(new Set(ids).size, 20);
+      const naoVistas = pool.slice(30).map((q) => q.id);
+      ok(naoVistas.every((id) => ids.includes(id)), "as 10 não vistas devem entrar");
+      ok(pool.slice(0, 5).every((q) => ids.includes(q.id)), "as 5 erradas devem entrar antes das acertadas");
+    });
+
+    teste("rodada nunca repete questão e cabe no tamanho do recorte", () => {
+      const pool = M.filtrar(qs, { capitulo: 6 });
+      const ids = M.sortearRodada(pool, {}, M.criarRng(3));
+      igual(ids.length, Math.min(M.TAMANHO_RODADA, pool.length));
+      igual(new Set(ids).size, ids.length);
+      ok(ids.every((id) => pool.some((q) => q.id === id)), "questão de fora do recorte entrou");
+    });
+
+    teste("embaralha alternativas e botões V/F (a certa passa por todas as posições)", () => {
+      const q1 = qs.find((q) => q.tipo === "mc");
+      const qv = qs.find((q) => q.tipo === "vf");
+      const posicoes = new Set();
+      const primeiroVf = new Set();
+      for (let s = 0; s < 60; s++) {
+        const ordem = M.sortearOrdem(qs, M.criarRng(s));
+        igual([...ordem[q1.id]].sort(), [q1.correta, ...q1.erradas].sort());
+        posicoes.add(ordem[q1.id].indexOf(q1.correta));
+        primeiroVf.add(ordem[qv.id][0]);
+      }
+      igual([...posicoes].sort(), [0, 1, 2, 3]);
+      igual([...primeiroVf].sort(), ["Falso", "Verdadeiro"]);
+    });
+
+    teste("a versão para a tela não traz gabarito nem explicação, mas traz a ajuda", () => {
+      const q = qs.find((x) => x.tipo === "mc");
+      const v = M.questaoParaAluna(q, M.sortearOrdem([q], M.criarRng(1)));
+      ok(!("correta" in v) && !("erradas" in v) && !("explicacao" in v) && !("resposta" in v));
+      igual(v.ajuda, q.ajuda);
+      igual([...v.opcoes].sort(), [q.correta, ...q.erradas].sort());
+    });
+
+    teste("XP, nível, estágio e sequência de dias", () => {
+      igual(M.xpDaRodada(20, 10), 250); igual(M.xpDaRodada(18, 9), 210); igual(M.xpDaRodada(15, 7.5), 150);
+      igual([M.nivelPorXp(0), M.nivelPorXp(100), M.nivelPorXp(299)], [1, 2, 2]);
+      igual(M.estagioPorNivel(1).chave, "ovo"); igual(M.estagioPorNivel(7).chave, "mestre");
+      const hoje = new Date(2026, 9, 20);
+      igual(M.sequenciaDeDias(["2026-10-20T09:00:00", "2026-10-19T20:00:00", "2026-10-18T08:00:00"], hoje), 3);
+      igual(M.sequenciaDeDias(["2026-10-19T20:00:00"], hoje), 1);
+      igual(M.sequenciaDeDias(["2026-10-17T20:00:00"], hoje), 0);
+    });
+
+    teste("conquistas", () => {
+      const base = { rodadas: 0, trofeus: 0, rodada_perfeita: false, sequencia: 0, vistas: 0, total_banco: qs.length, veloz: false };
+      igual([...M.conquistasMerecidas(base)], []);
+      const c = M.conquistasMerecidas({ ...base, rodadas: 1, trofeus: 5, rodada_perfeita: true, sequencia: 7, vistas: qs.length, veloz: true });
+      igual(c.size, 8);
+    });
+
+    import * as T from "../js/termos.js";
+    teste("termos de uso: versão, 9 cláusulas essenciais e resumo, sem marcadores soltos", () => {
+      ok(Number.isInteger(T.VERSAO_TERMOS) && T.VERSAO_TERMOS >= 1);
+      igual(T.ARTIGOS.length, 9);
+      const titulos = T.ARTIGOS.map((a) => a[0]);
+      for (const t of ["Sem garantias", "Pode haver enganos", "Pode mudar ou acabar", "Seus dados", "Responsabilidade"]) ok(titulos.includes(t), t);
+      ok(T.ARTIGOS.every(([t, x]) => t && x.length > 20 && !x.includes("__")), "texto com marcador solto");
+      igual(T.resumoEl().children.length, 4);
+    });
+
+    document.title = falhas ? `FALHOU ${falhas}/${total}` : `OK ${total}/${total}`;
+    const resumo = document.createElement("p");
+    resumo.id = "resumo"; resumo.textContent = document.title;
+    document.body.prepend(resumo);
+  </script>
+</body>
+</html>

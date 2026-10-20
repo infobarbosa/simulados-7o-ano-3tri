@@ -1,0 +1,51 @@
+{
+ "versao": 1,
+ "disciplinas": [
+  {
+   "id": "ciencias",
+   "nome": "Ciências",
+   "icone": "🔬",
+   "cor": "#1CB0F6",
+   "banco": "ciencias-caps-6-7.json",
+   "assunto": "Máquinas, motores e atmosfera",
+   "tema": "Capítulos 6 e 7 · págs. 94–125",
+   "trilhas": [
+    {
+     "id": "foco",
+     "nome": "Foco da prova",
+     "icone": "🔥",
+     "descricao": "Motores a combustão externa e interna, chuva ácida, inversão térmica, efeito estufa, aquecimento global, mudanças climáticas e camada de ozônio",
+     "filtro": {
+      "foco": true
+     },
+     "destaque": true
+    },
+    {
+     "id": "cap6",
+     "nome": "Cap. 6 — Da roda ao trem",
+     "icone": "🛞",
+     "descricao": "Máquinas simples: alavancas, roda, polias, engrenagens e plano inclinado",
+     "filtro": {
+      "capitulo": 6
+     }
+    },
+    {
+     "id": "cap7",
+     "nome": "Cap. 7 — Máquinas térmicas",
+     "icone": "🚂",
+     "descricao": "Trabalho, leis da Termodinâmica, combustíveis, rendimento e impactos",
+     "filtro": {
+      "capitulo": 7
+     }
+    },
+    {
+     "id": "tudo",
+     "nome": "Tudo misturado",
+     "icone": "🎲",
+     "descricao": "Sorteio geral com todas as questões dos dois capítulos",
+     "filtro": {}
+    }
+   ]
+  }
+ ]
+}
